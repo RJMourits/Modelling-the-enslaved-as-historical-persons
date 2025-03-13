@@ -23,15 +23,15 @@ During three meetings in Q1 2025, we came to the following conclusions
 | | Issue | Description	  | 
 |--|-------|----------------|
 | 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
-| 2. | Observation or reconstruction | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
-| 3. | Person status | There is no property to describe whether someone is enslaved |
-| 4. | Relations | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
-| 5. | Slaveholders | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
-| 6. | Ships | Ships are required to model slave voyages |
-| 7. | Reasons for observation | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
-| 8. | Social categories | Person observations often contain social categories related to race, class, or religion |
-| 9. | Person names | Person names contain more information than can currently be modelled in Schema.org or Person Name Vocabulary (African names, Christian names, person descriptions) |
-| 10. | Age categories | Person observations sometimes only state an age category (child vs adult) rather than the exact age |
+| 2. | Age categories | Person observations sometimes only state an age category (child vs adult) rather than the exact age |
+| 3. | Observation or reconstruction | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
+| 4. | Person names | Person names contain more information than can currently be modelled in Schema.org or Person Name Vocabulary (African names, Christian names, person descriptions) |
+| 5. | Person status | There is no property to describe whether someone is enslaved |
+| 6. | Reasons for observation | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
+| 7. | Relations | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
+| 8. | Slaveholders | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
+| 9. | Ships | Ships are required to model slave voyages |
+| 10. | Social categories | Person observations often contain social categories related to race, class, or religion |
 
 ## Integration of existing schemas
 
