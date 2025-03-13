@@ -20,7 +20,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 During three meetings in Q1 2025, we came to the following conclusions
 
 
-| Nr | Issue | Description	  | 
+| | Issue | Description	  | 
 |----|-------|----------------|
 | 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
 | 2. | Observation or reconstruction | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
