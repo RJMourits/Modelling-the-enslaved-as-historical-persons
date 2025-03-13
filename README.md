@@ -23,7 +23,7 @@ During three meetings in Q1 2025, we came to the following conclusions
 | Nr | Issue | Description	  | 
 |----|-------|----------------|
 | 1. | Using PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
-| 2. | Person observations and reconstructions | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
+| 2. | Observation or reconstruction | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
 | 3. | Person status | There is no property to describe whether someone is enslaved |
 | 4. | Relations | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
 | 5. | Slaveholders | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
