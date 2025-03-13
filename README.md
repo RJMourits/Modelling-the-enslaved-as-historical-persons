@@ -41,8 +41,8 @@ During three meetings in Q1 2025, we came to the following conclusions
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons | **yes** |
-| 2. | Age categories | hasAge is used to mention ages. However, the user expects an exact age <br> We advise not to use hasAge to refer to age categories | **no** |
-| 3. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allows for interpretation. <br> _**In case the relation to the source is lost, and records probably contain interpretation by the data provider, we advise to use person reconstructions**_ | **yes** |
+| 2. | Age categories | hasAge is used to mention ages. However, the user expects an exact age <br> _**We suggest not to use hasAge to refer to age categories**_ | **no** |
+| 3. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allows for interpretation. <br> _**In case the relation to the source is lost, and records probably contain interpretation by the data provider, we suggest to use person reconstructions**_ | **yes** |
 
 
 ### Enslaved.org
