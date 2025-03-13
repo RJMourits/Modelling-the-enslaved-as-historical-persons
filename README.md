@@ -85,6 +85,6 @@ During three meetings in Q1 2025, we came to the following conclusions
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
 | 8. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
-| 11. | Social categories |  | **hasSocialDescription** |
+| 11. | Social categories |  | **hasSocialIdentity** |
 | 12. | Toponyms | **TBD** |
 | 13. | Type of enslavement | **TBD** |
