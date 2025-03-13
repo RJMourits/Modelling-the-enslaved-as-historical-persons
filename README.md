@@ -32,7 +32,8 @@ During three meetings in Q1 2025, we came to the following conclusions
 | 8. | Slaveholders | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
 | 9. | Ships | Ships are required to model slave voyages |
 | 10. | Social categories | Person observations often contain social categories related to race, class, or religion |
-| 11. | Type of enslavement | There is no property to describe the type of enslavement |
+| 11. | Toponyms | |
+| 12. | Type of enslavement | There is no property to describe the type of enslavement |
 
 ## Integration of existing schemas
 
@@ -83,4 +84,5 @@ During three meetings in Q1 2025, we came to the following conclusions
 |--|-------|----------------|----------|
 | 7. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
 | 10. | Social categories |  | **hasSocialDescription** |
-| 11. | Type of enslavement | **TBD** |
+| 11. | Toponyms | |
+| 12. | Type of enslavement | **TBD** |
