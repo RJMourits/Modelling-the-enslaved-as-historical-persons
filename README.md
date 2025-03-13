@@ -81,5 +81,6 @@ During three meetings in Q1 2025, we came to the following conclusions
 ### Required specialised properties
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
+| 7. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
 | 10. | Social categories |  | **hasSocialDescription** |
 | 11. | Type of enslavement | **TBD** |
