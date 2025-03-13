@@ -36,8 +36,10 @@ During three meetings in Q1 2025, we came to the following conclusions
 ## Integration of existing schemas
 
 ### Enslaved.org
+
 |--|-------|----------------|
 | 2. | Age categories | Enslaved.org uses [_hasAgeCategory_]([url](https://lod.enslaved.org/wiki/Property:P4)) to model age groups. This age group has the following categories |
+
 - Q426  _Infant Age Group_
 - Q427  _Child Age Group_
 - Q425  _Adult Age Group_
