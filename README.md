@@ -19,19 +19,22 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 ## Evaluation of the PiCo model
 During three meetings in Q1 2025, we came to the following conclusions
 
-1. The logic of the Persons in Context model is easily applicable to data on enslaved persons
-2. The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers)
-3. There is no property to describe whether someone is enslaved
-4. Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris)
-5. Enslaved are not always persons, but can also be organisations (mainly plantations, but also other)
-6. Ships are required to model slave voyages
-7. Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations
-8. Person observations often contain social categories related to race, class, or religion
-9. Person names contain more information than can currently be modelled in Schema.org or Person Name Vocabulary (African names, Christian names, person descriptions)
-10. Person observations sometimes only state an age category (child vs adult) rather than the exact age
+
+| Issue    | Description	  | 
+|----------|----------------|
+| 1. | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
+| 2. | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
+| 3. | There is no property to describe whether someone is enslaved |
+| 4. | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
+| 5. | Enslaved are not always persons, but can also be organisations (mainly plantations, but also other) |
+| 6. | Ships are required to model slave voyages |
+| 7. | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
+| 8. | Person observations often contain social categories related to race, class, or religion |
+| 9. | Person names contain more information than can currently be modelled in Schema.org or Person Name Vocabulary (African names, Christian names, person descriptions) |
+| 10. | Person observations sometimes only state an age category (child vs adult) rather than the exact age |
 
 ## Integration of existing schemas
 
 ### Enslaved.org
-3. Mogelijk
+3. 
 4. Relations are modelled as a concept with its own entities. This approach is incongruent with the PiCo model that uses properties to directly relate two people
