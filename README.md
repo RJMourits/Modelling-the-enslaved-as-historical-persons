@@ -78,8 +78,8 @@ During three meetings in Q1 2025, we came to the following conclusions
 | 9. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net.  | **Reach out** |
 
 
-### Required specialised vocabularies
-|  | Issue | Description	  |
-|--|-------|----------------|
-| 10. | Social categories |  |
-| 11. | Type of enslavement |  |
+### Required specialised properties
+|  | Issue | Description	  | property | 
+|--|-------|----------------|----------|
+| 10. | Social categories |  | **hasSocialDescription** |
+| 11. | Type of enslavement | **TBD** |
