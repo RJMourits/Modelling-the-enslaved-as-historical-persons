@@ -38,7 +38,11 @@ During three meetings in Q1 2025, we came to the following conclusions
 
 ### PiCo-M
 
-### Enslaved.org
+|  | Issue | Description	  | Reuse |
+|--|-------|----------------|-------|
+| 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons | **yes** |
+| 2. | Age categories | hasAge is used to mention ages. However, the user expects an exact age | **no** |
+| 3. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allows for interpretation. <br> _**In case the relation to the source is lost, and records probably contain interpretation by the data provider, we advise to use person reconstructions**_ | **yes** |
 
 
 ### Enslaved.org
@@ -47,6 +51,35 @@ During three meetings in Q1 2025, we came to the following conclusions
 |--|-------|----------------|-------|
 | 2. | Age categories | [_hasAgeCategory_](https://lod.enslaved.org/wiki/Property:P4) is used to model age groups. This property has four categories: [_Infant Age Group_](https://lod.enslaved.org/wiki/Q426), [_Child Age Group_](https://lod.enslaved.org/wiki/Q427), [_Adult Age Group_](https://lod.enslaved.org/wiki/Q425), and [_Older Person Age Group_](https://lod.enslaved.org/wiki/Q429) |  **yes** | 
 | 5. | Person status | [_hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) is used to model person status. This property has seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192). This category is too specific to be broadly used, and too broad to be used specifically. <br> _**We suggest to use the property and three concepts: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192)**_ | **yes** |
+| 6. | Reasons for observations | | **yes** |
 | 7. | Relations | Relations are modelled as a concept with its own entities. This approach is incongruent with the PiCo model that uses properties to directly relate two people. | **no** |
 | 10. | Social Categories | [_hasRaceorColor_](https://lod.enslaved.org/wiki/Property:P32) is used to model racial characteristics. This variable causes discussions as social categories can also be based on religion, caste, class, etc. | **no** |
 | 11. | Type of enslavement | _hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) can be used to model the type of enslavement. However, the seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192) are too specific to be broadly used, and too broad to be used specifically | **yes** |
+
+
+### Person Name Vocabulary
+
+|  | Issue | Description	  | Reuse |
+|--|-------|----------------|-------|
+| 4. | Person names | Person names contain more information than can currently be modelled in Schema.org or Person Name Vocabulary (African names, Christian names, person descriptions) | **Reach out** |
+
+
+### Schema.org
+
+|  | Issue | Description	  | Reuse |
+|--|-------|----------------|-------|
+| 8. | Slaveholders | [Organization](https://schema.org/Organization) is a concept in Schema.org | **TBD** |
+
+
+### SlaveVoyages.net
+
+|  | Issue | Description	  | Reuse |
+|--|-------|----------------|-------|
+| 9. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net.  | **Reach out** |
+
+
+### Required specialised vocabularies
+|  | Issue | Description	  |
+|--|-------|----------------|
+| 10. | Social categories |  |
+| 11. | Type of enslavement |  |
