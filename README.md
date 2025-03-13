@@ -20,7 +20,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 During three meetings in Q1 2025, we came to the following conclusions
 
 
-| | Issue | Description	  | 
+|  | Issue | Description	  | 
 |--|-------|----------------|
 | 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
 | 2. | Age categories | Person observations sometimes only state an age category (child vs adult) rather than the exact age |
@@ -36,5 +36,11 @@ During three meetings in Q1 2025, we came to the following conclusions
 ## Integration of existing schemas
 
 ### Enslaved.org
-3. 
+2. Age categories
+Enslaved.org uses [_hasAgeCategory_]([url](https://lod.enslaved.org/wiki/Property:P4)) to model age groups. This age group has the following categories
+- Q426  _Infant Age Group_
+- Q427  _Child Age Group_
+- Q425  _Adult Age Group_
+- Q429  _Older Person Age Group_
+
 4. Relations are modelled as a concept with its own entities. This approach is incongruent with the PiCo model that uses properties to directly relate two people
