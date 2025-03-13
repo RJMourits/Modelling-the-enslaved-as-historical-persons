@@ -39,6 +39,6 @@ During three meetings in Q1 2025, we came to the following conclusions
 
 |  | Issue | Description	  | 
 |--|-------|----------------|
-| 2. | Age categories | [_hasAgeCategory_]([url](https://lod.enslaved.org/wiki/Property:P4)) is used to model age groups. This age group has four categories: [_Infant Age Group_]([url](https://lod.enslaved.org/wiki/Q426)), [_Child Age Group_]([url](https://lod.enslaved.org/wiki/Q427)), [_Adult Age Group_]([url](https://lod.enslaved.org/wiki/Q425)), [_Older Person Age Group_]([url](https://lod.enslaved.org/wiki/Q429)) |
+| 2. | Age categories | [_hasAgeCategory_](https://lod.enslaved.org/wiki/Property:P4) is used to model age groups. This age group has four categories: [_Infant Age Group_]([url]), [_Child Age Group_]([url](https://lod.enslaved.org/wiki/Q427)), [_Adult Age Group_]([url](https://lod.enslaved.org/wiki/Q425)), [_Older Person Age Group_]([url](https://lod.enslaved.org/wiki/Q429)) |
 
 4. Relations are modelled as a concept with its own entities. This approach is incongruent with the PiCo model that uses properties to directly relate two people
