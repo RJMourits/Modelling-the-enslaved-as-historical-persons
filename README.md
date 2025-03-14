@@ -89,6 +89,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
 | 9. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
+| 10. | Slaveholders | Thunnis has made a thesaurus of Surinamese plantations and uploaded these to WikiData. Curated catalogues can help to refer to plantations and other organisations. | **TBD** |
 | 12. | Social categories |  | **hasSocialIdentity** |
 | 13. | Toponyms | **TBD** |
 | 14. | Type of enslavement | **TBD** |
