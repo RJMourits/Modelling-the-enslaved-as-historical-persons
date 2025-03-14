@@ -17,7 +17,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 - New extensions can be introduced with consensus between the HDSC, Globalised, and ESTA
 
 ## Evaluation of the PiCo model
-During three meetings in Q1 2025, we came to the following conclusions
+During three meetings in Q1 2025, we identified the following issues in implementing PiCo-M for historical person data on slave history:
 
 
 |  | Issue | Description	  |
@@ -38,6 +38,8 @@ During three meetings in Q1 2025, we came to the following conclusions
 | 14. | Type of enslavement | There is no property to describe the type of enslavement |
 
 ## Integration of existing schemas
+
+For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse.
 
 ### PiCo-M
 
