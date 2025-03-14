@@ -75,7 +75,7 @@ For each of these issues, we checked whether solutions were available in the Per
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 10. | Slaveholders | [Organization](https://schema.org/Organization) is a concept in Schema.org | **TBD** |
+| 10. | Slaveholders | [Organization](https://schema.org/Organization) is a class in Schema.org | **TBD** |
 
 
 ### SlaveVoyages.net
