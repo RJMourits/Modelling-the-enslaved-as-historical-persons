@@ -15,6 +15,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 - Where possible, extensions to the model are based on existing vocabularies
 - Extensions to the model follow the logic of concentric description: where possible global (Schema.org), otherwise domain-specific (Enslaved.org), or specialised (Person Name Vocabulary)
 - New extensions can be introduced with consensus between the HDSC, Globalised, and ESTA
+- The model should be easily transposable to the Enslaved.org data model
 
 ## Evaluation of the PiCo model
 During three meetings in Q1 2025, we identified the following issues in implementing PiCo-M for historical person data on slave history:
