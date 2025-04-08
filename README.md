@@ -70,7 +70,7 @@ For each of these issues, we checked whether solutions were available in the Per
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with pnv:nameSpecification | **yes** |
+| 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with [_nameSpecification_](https://www.lodewijkpetram.nl/vocab/pnv/doc/#nameSpecification) | **yes** |
 | 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model | **reach out** |
 
 
