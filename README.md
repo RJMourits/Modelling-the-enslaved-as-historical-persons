@@ -71,7 +71,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with pnv:nameSpecification | **yes** |
-| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model | **Reach out** |
+| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model | **reach out** |
 
 
 ### Schema.org / Organization ontology
@@ -85,7 +85,7 @@ For each of these issues, we checked whether solutions were available in the Per
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net. We should aim for interoperability with their framework. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **Reach out** |
+| 11. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net. We should aim for interoperability with their framework. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **reach out** |
 
 
 ### WikiData
