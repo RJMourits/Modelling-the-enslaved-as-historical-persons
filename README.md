@@ -89,7 +89,9 @@ For each of these issues, we checked whether solutions were available in the Per
 
 
 ### WikiData
-| 10. | Slaveholders | WikiData can be used to specify the type of organization, for example a plantation [_wdt:Q188913_](https://www.wikidata.org/entity/Q188913) | **TBD** |
+|  | Issue | Description	  | Reuse |
+|--|-------|----------------|-------|
+| 10. | Slaveholders | WikiData can be used to specify the type of organization, for example a plantation [_Q188913_](https://www.wikidata.org/entity/Q188913) | **TBD** |
 | 13. | Thesauri | Thunnis has made a thesaurus of Surinamese plantations and uploaded the individual plantations to WikiData. This makes the data available to the world, but no longer a curated catalogue | **TBD** |
 
 
