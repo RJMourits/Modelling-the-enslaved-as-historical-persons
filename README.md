@@ -100,4 +100,3 @@ For each of these issues, we checked whether solutions were available in the Per
 |--|-------|----------------|----------|
 | 9. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
 | 12. | Social categories |  | **hasSocialIdentity** |
-| 15. | Type of enslavement | | **TBD** |
