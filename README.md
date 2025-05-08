@@ -78,7 +78,7 @@ For each of these issues, we checked whether solutions were available in the Per
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). Will be compared to organization ontology to see what works best for modelling | **yes** |
+| 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). These properties can be made reflexive with [_affiliation_](https://schema.org/affiliation) | **yes** |
 
 
 ### SlaveVoyages.net
