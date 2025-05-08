@@ -91,8 +91,8 @@ For each of these issues, we checked whether solutions were available in the Per
 ### WikiData
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 10. | Slaveholders | WikiData can be used to specify the type of organization, for example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
-| 13. | Thesauri | Thunnis has made a thesaurus of Surinamese plantations and uploaded the individual plantations to WikiData. This makes the data available to the world, but no longer a curated catalogue | **TBD** |
+| 10. | Slaveholders | WikiData can be used to specify the type of organization, and give a definiton of that organization. For example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
+| 13. | Thesauri | Thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
 
 
 ### Required specialised properties
