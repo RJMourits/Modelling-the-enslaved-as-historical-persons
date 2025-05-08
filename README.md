@@ -85,7 +85,7 @@ For each of these issues, we checked whether solutions were available in the Per
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net. We should aim for interoperability with their framework. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **reach out** |
+| 11. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net. We should aim for interoperability with their framework. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **in contact** |
 
 
 ### WikiData
