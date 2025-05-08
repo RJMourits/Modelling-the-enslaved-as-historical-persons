@@ -78,7 +78,7 @@ For each of these issues, we checked whether solutions were available in the Per
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns). Will be compared to organization ontology to see what works best for modelling | **TBD** |
+| 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). Will be compared to organization ontology to see what works best for modelling | **yes** |
 
 
 ### SlaveVoyages.net
@@ -91,7 +91,7 @@ For each of these issues, we checked whether solutions were available in the Per
 ### WikiData
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 10. | Slaveholders | WikiData can be used to specify the type of organization, for example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **TBD** |
+| 10. | Slaveholders | WikiData can be used to specify the type of organization, for example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
 | 13. | Thesauri | Thunnis has made a thesaurus of Surinamese plantations and uploaded the individual plantations to WikiData. This makes the data available to the world, but no longer a curated catalogue | **TBD** |
 
 
