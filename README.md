@@ -34,7 +34,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 9. | Relations | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
 | 10. | Slaveholders | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
 | 11. | Ships | Ships are required to model slave voyages |
-| 12. | Social categories | Person observations often contain social categories related to race, class, or religion |
+| 12. | Social categories | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
 | 13. | Thesauri | Person observations often contain social categories related to race, class, or religion |
 | 14. | Toponyms | Person names of enslaved often contain a toponym with which they have an association. The exact meaning is ambiguous, but the association with the place is, for example, required to reconstruct persons |
 | 15. | Type of enslavement | There is no property to describe the type of enslavement |
