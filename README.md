@@ -81,11 +81,11 @@ For each of these issues, we checked whether solutions were available in the Per
 | 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). These properties can be made reflexive with [_affiliation_](https://schema.org/affiliation) | **yes** |
 
 
-### SlaveVoyages.net
+### SlaveVoyages.net + Exploring Slave Trade in Asia (ESTA)
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net. We should aim for interoperability with their framework. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **in contact** |
+| 11. | Ships | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **in contact** |
 
 
 ### WikiData
