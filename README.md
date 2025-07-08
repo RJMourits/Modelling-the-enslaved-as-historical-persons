@@ -35,7 +35,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 10. | Slaveholders<sup>[1](#schema.org),[2](#wikidata)]</sup> | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
 | 11. | Slave voyages<sup>[1](#schema.org),[2](#slavevoyage.net),[3](#required-specialised-properties)</sup>  | Ships are required to model slave voyages |
 | 12. | Social categories<sup>[1](#enslaved.org),[2](#required-specialised-properties)</sup> | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
-| 13. | Taxonomies and Thesauri<sup>[1](#wikidata),[2](#taxonomies-and-thesauri)</sup>) | Person observations often contain social categories related to race, class, or religion |
+| 13. | Taxonomies and Thesauri<sup>[1](#wikidata),[2](#taxonomies-and-thesauri)</sup> | Person observations often contain social categories related to race, class, or religion |
 | 14. | [Toponyms](#person-name-vocabulary) | Person names of enslaved often contain a toponym with which they have an association. The exact meaning is ambiguous, but the association with the place is, for example, required to reconstruct persons |
 | 15. | [Type of enslavement](#enslaved.org) | There is no property to describe the type of enslavement |
 
