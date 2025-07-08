@@ -219,13 +219,28 @@ We also describe the start and end date of person observations using [sdo:startD
   
 ### Relation enslaved - legal representative
 
+
 ### Relation owner - legal representative
+Owners are sometimes represented by an intermediary or by their spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy.
+
+| Object | Property | Object |
+|----|----|----|
+| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:spouse](https://schema.org/spouse) | hdsc:intermediary1 ; |
+| | [XXX:legallyRepresentedBy] | hdsc:intermediary1 . |
+| hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:spouse](https://schema.org/spouse) | hdsc:owner1 ; |
+| | [XXX:legallyRepresents] | hdsc:owner1 . |
+
 
 ### Plantations (and other organisations)
 
+
 ### Slave voyages
 
+
 ### Group observations
+
 
 ### Manumission
 
