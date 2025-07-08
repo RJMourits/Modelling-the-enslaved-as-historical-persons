@@ -148,16 +148,20 @@ For each of these issues, we checked whether solutions were available in the Per
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
 ### Relation enslaved - enslaver
-We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). These properties should be dated using a blank note using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as like marriages in PiCo-M, slavery relations can change over time. 
+Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. These relations should be dated in a blank note using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as like marriages in PiCo-M, slavery relations can change over time. 
 
 | Object | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
 | hdsc:enslaved1 | a | pico:PersonObservation ; | | |
 | | ed:P33 | ed:Q109 ; | | |
-| | XXX:isEnslavedBy | [ | | |
+| | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
+| | | | sdo:startDate | "1837-08-15"^^xsd:date ; |
+| | | | sdo:endDate | "1838"^^xsd:gYear ; ] . |
 | hdsc:enslaved2 | a | pico:PersonObservation ; | | |
 | | ed:P33 | ed:Q109 ; | | |
-| | XXX:isEnslavedBy | hdsc:owner1 . | | |
+| | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
+| | | | sdo:startDate | "1837-08-15"^^xsd:date ; |
+| | | | sdo:endDate | "1838"^^xsd:gYear ; ] . |
 | hdsc:owner1 | a | pico:PersonObservation ; | | |
 | | XXX:isEnslaverOf | hdsc:enslaved1, hdsc:enslaved2 . | | |
 
