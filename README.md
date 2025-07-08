@@ -161,15 +161,16 @@ Both enslaved and free persons can be modelled as picom:PersonObservations. We u
 | hdsc:owner1 | a | pico:PersonObservation ; |
 | | XXX:isEnslaverOf | hdsc:enslaved1, hdsc:enslaved2 . |
 
-However, we add the beginning and end date of the observed enslaved relations using using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
+However, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
 
-| Object | Property | Object | Property Blank Node | Object Blank Node |
+| Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
 | hdsc:enslaved1 | a | pico:PersonObservation ; | | |
 | | ed:P33 | ed:Q109 ; | | |
 | | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
 | | | | sdo:startDate | "1837-08-15"^^xsd:date ; |
-| | | | sdo:endDate | "1838"^^xsd:gYear ; ] . |
+| | | | sdo:endDate | "1838"^^xsd:gYear ; |
+| | | ] . | | |
 | hdsc:enslaved2 | a | pico:PersonObservation ; | | |
 | | ed:P33 | ed:Q109 ; | | |
 | | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
