@@ -90,6 +90,9 @@ For each of these issues, we checked whether solutions were available in the Per
 
 
 ### Exploring Slave Trade in Asia (ESTA)
+
+|  | Issue | Description	  | Reuse |
+|--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
 
 
