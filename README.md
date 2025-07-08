@@ -175,14 +175,17 @@ However, we advise to also add the beginning and end date of the observed enslav
 | | ed:P33 | ed:Q109 ; | | |
 | | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
 | | | | sdo:startDate | "1837-08-16"^^xsd:date ; |
-| | | | sdo:endDate | "1838"^^xsd:gYear ; ] . |
+| | | | sdo:endDate | "1838"^^xsd:gYear ; |
+| | | ] . | | |
 | hdsc:owner1 | a | pico:PersonObservation ; | | |
 | | XXX:isEnslaverOf | [ | rdf:value | hdsc:enslaved1 ; |
 | | | | sdo:startDate | "1837-08-15"^^xsd:date ; |
-| | | | sdo:endDate | "1838"^^xsd:gYear ; ] ; |
+| | | | sdo:endDate | "1838"^^xsd:gYear ; |
+| | | ] ; | | |
 | | XXX:isEnslaverOf | [ | rdf:value | hdsc:enslaved2 ; |
 | | | | sdo:startDate | "1837-08-16"^^xsd:date ; |
-| | | | sdo:endDate | "1838"^^xsd:gYear ; ] . |
+| | | | sdo:endDate | "1838"^^xsd:gYear ; |
+| | | ] . | | |
 
 We also describe the start and end date of person observations using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate). These receive the Enslaved.org property for [hasEventType](https://lod.enslaved.org/wiki/Property:P30) and any of the associated concepts as a blank node: [_Advertisement_](https://lod.enslaved.org/wiki/Q907443), [_Appraisal_](https://lod.enslaved.org/wiki/Q647904), [_Baptism or Naming Ceremony_](https://lod.enslaved.org/wiki/Q149), [_Birth_](https://lod.enslaved.org/wiki/Q147), _Burial or Interment_, [_Death_](https://lod.enslaved.org/wiki/Q148), [_Disappearance_](https://lod.enslaved.org/wiki/Q154), [_Disembarkation_](https://lod.enslaved.org/wiki/Q10088), _Education_, [_Emancipation or Manumission_](https://lod.enslaved.org/wiki/Q281), [_Embarkation_](https://lod.enslaved.org/wiki/Q10087), [_Employment, Apprenticeship, or Indenture_](https://lod.enslaved.org/wiki/Q156), [_Enslavement_](https://lod.enslaved.org/wiki/Q151), [_Legal Proceeding_](https://lod.enslaved.org/wiki/Q155), [_Marriage_](https://lod.enslaved.org/wiki/Q150), [_Membership_](https://lod.enslaved.org/wiki/Q473), [_Mention_](https://lod.enslaved.org/wiki/Q856060), [_Military Service_](https://lod.enslaved.org/wiki/Q164), [_Mortgage_](https://lod.enslaved.org/wiki/Q298746), [_Narrative_](https://lod.enslaved.org/wiki/Q157), [_Resistance or Rebellion_](https://lod.enslaved.org/wiki/Q357), [_Registration_](https://lod.enslaved.org/wiki/Q250), [_Relocation_](https://lod.enslaved.org/wiki/Q161), [_Residence_](https://lod.enslaved.org/wiki/Q159), [_Sale or Transfer_](https://lod.enslaved.org/wiki/Q153), [_Trade_](https://lod.enslaved.org/wiki/Q1147583), [_Voyage_](https://lod.enslaved.org/wiki/Q146).
 
