@@ -5,7 +5,8 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 - [Introduction](#introduction)
 - [Specification](#specification)
 - [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
-- [Example](#examples)
+- [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
+- - Test
 
 @### Relation enslaved - enslaver
 @### Relation enslaved - legal representative
@@ -54,7 +55,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 
 ## Integration of existing schemas
 
-For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse in and presented our outcomes at the DH-Benelux in June 2025.
+For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse in and presented our outcomes in Q1 and Q2 2025.
 
 ### PiCo-M
 
@@ -127,9 +128,11 @@ For each of these issues, we checked whether solutions were available in the Per
 | 13. | Taxonomies and Thesauri | Person observations often contain social categories related to race, class, or religion |
 
 
-## Examples
+## Exentensions of the PiCo model
+Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
 ### Relation enslaved - enslaver
+We use the properties isEnslavedBy isEnslaved
 
 ### Relation enslaved - legal representative
 
