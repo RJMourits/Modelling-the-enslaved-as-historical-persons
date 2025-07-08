@@ -16,6 +16,8 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Required specialised properties](#required-specialised-properties)
 - [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
 - [Taxonomies and thesauri](#taxonomies-and-thesauri)
+  - [Enslavement status](#enslavement-status)
+  - [Manumission](#manumission)
   - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
   - [Relation enslaved - legal representative](#relation-enslaved---legal-representative)
   - [Relation owner - legal representative](#relation-owner---legal-representative)
@@ -146,6 +148,10 @@ For each of these issues, we checked whether solutions were available in the Per
 
 ## Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
+
+### Enslavement status
+
+### Manumission
 
 ### Relation enslaved - enslaver
 Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. In its simplest form, this would result in the following triples.
