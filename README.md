@@ -150,15 +150,15 @@ Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we m
 ### Relation enslaved - enslaver
 We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. These properties should be dated using a blank note using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as like marriages in PiCo-M, slavery relations can change over time. The timing is noted using a blank node.
 
-| Object | Property | Object | |
-|----|----|----|----|
-| hdsc:010820b1983 | a | pico:PersonObservation | ; |
-| | ed:P33 | ed:Q109 | ; |
-| hdsc:010820b1984 | a | pico:PersonObservation | ; |
-| | ed:P33 | ed:Q109 | ; |
-| | XXX:isEnslavedBy | hdsc:owner1 | . |
-| hdsc:owner1 | a | pico:PersonObservation | ; |
-| | XXX:isEnslaverOf | hdsc:010820b1983, hdsc:010820b1983 | . |
+| Object | Property | Object |
+|----|----|----|
+| hdsc:enslaved1 | a | pico:PersonObservation ; |
+| | ed:P33 | ed:Q109 . |
+| hdsc:enslaved2 | a | pico:PersonObservation ; |
+| | ed:P33 | ed:Q109 . |
+| | XXX:isEnslavedBy | hdsc:owner1 |
+| hdsc:owner1 | a | pico:PersonObservation ; |
+| | XXX:isEnslaverOf | hdsc:enslaved1, hdsc:enslaved2 . |
 
 
   hdsc:isEnslavedBy         [ 
