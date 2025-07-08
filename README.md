@@ -218,6 +218,15 @@ We also describe the start and end date of person observations using [sdo:startD
 
   
 ### Relation enslaved - legal representative
+Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy.
+
+| Object | Property | Object |
+|----|----|----|
+| hdsc:freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; |
+| | XXX:legallyRepresentedBy | hdsc:intermediary1 . |
+| hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | XXX:legallyRepresents | hdsc:freedperson1 . |
 
 
 ### Relation owner - legal representative
@@ -227,10 +236,10 @@ Owners are sometimes represented by an intermediary or by their spouse. This is 
 |----|----|----|
 | hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:spouse](https://schema.org/spouse) | hdsc:intermediary1 ; |
-| | [XXX:legallyRepresentedBy] | hdsc:intermediary1 . |
+| | XXX:legallyRepresentedBy | hdsc:intermediary1 . |
 | hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:spouse](https://schema.org/spouse) | hdsc:owner1 ; |
-| | [XXX:legallyRepresents] | hdsc:owner1 . |
+| | XXX:legallyRepresents | hdsc:owner1 . |
 
 
 ### Plantations (and other organisations)
