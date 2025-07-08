@@ -17,11 +17,11 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 - [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
 - [Taxonomies and thesauri](#taxonomies-and-thesauri)
   - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
-  - Relation enslaved - legal representative
-  - Relation owner - legal representative
-  - Plantations
-  - Slave voyage
-  - Group observations
+  - [Relation enslaved - legal representative](#relation-enslaved---legal-representative)
+  - [Relation owner - legal representative](#relation-owner---legal-representative)
+  - [Plantations](#plantations)
+  - [Slave voyages (and other organisations)](#slave-voyages-and-other-organisations)
+  - [Group observations](#group-observations)
 
 
 ## Introduction
@@ -169,9 +169,9 @@ hdsc:010820b1983
 
 ### Relation owner - legal representative
 
-### Plantations
+### Plantations (and other organisations)
 
-### Slave voyage
+### Slave voyages
 
 ### Group observations
 
