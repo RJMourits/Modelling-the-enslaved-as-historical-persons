@@ -19,8 +19,8 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
   - [Relation enslaved - legal representative](#relation-enslaved---legal-representative)
   - [Relation owner - legal representative](#relation-owner---legal-representative)
-  - [Plantations](#plantations)
-  - [Slave voyages (and other organisations)](#slave-voyages-and-other-organisations)
+  - [Plantations (and other organisations)](#plantations-and-other-organisations)
+  - [Slave voyages](#slave-voyages)
   - [Group observations](#group-observations)
 
 
