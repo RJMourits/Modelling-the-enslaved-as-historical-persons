@@ -2,6 +2,10 @@
 
 Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
 
+- [Introduction](#introduction)
+- [Specification](#specification)
+- [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
+
 ## Introduction
 
 In this document, we reflect on how to implement historical person data on enslaved people as Linked Data. Our aim is to use the [PiCo model](https://www.personsincontext.org) to fit all historical person observations  and to provide flexibility and guidelines for extending the model.
