@@ -41,7 +41,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 
 ## Integration of existing schemas
 
-For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse in Q1-Q2 2025.
+For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse in and presented our outcomes at the DH-Benelux 2025.
 
 ### PiCo-M
 
