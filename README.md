@@ -5,6 +5,15 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 - [Introduction](#introduction)
 - [Specification](#specification)
 - [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
+- [Example](#examples)
+
+@### Relation enslaved - enslaver
+@### Relation enslaved - legal representative
+@### Relation owner - legal representative
+@### Plantations
+@### Slave voyage
+@### Group observations
+
 
 ## Introduction
 
@@ -116,3 +125,19 @@ For each of these issues, we checked whether solutions were available in the Per
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
 | 13. | Taxonomies and Thesauri | Person observations often contain social categories related to race, class, or religion |
+
+
+## Examples
+
+### Relation enslaved - enslaver
+
+### Relation enslaved - legal representative
+
+### Relation owner - legal representative
+
+### Plantations
+
+### Slave voyage
+
+### Group observations
+
