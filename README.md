@@ -16,13 +16,12 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Required specialised properties](#required-specialised-properties)
 - [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
 - [Taxonomies and thesauri](#taxonomies-and-thesauri)
-
-@### Relation enslaved - enslaver
-@### Relation enslaved - legal representative
-@### Relation owner - legal representative
-@### Plantations
-@### Slave voyage
-@### Group observations
+  - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
+  - Relation enslaved - legal representative
+  - Relation owner - legal representative
+  - Plantations
+  - Slave voyage
+  - Group observations
 
 
 ## Introduction
