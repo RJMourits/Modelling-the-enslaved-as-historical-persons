@@ -24,7 +24,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 |  | Issue | Description	  |
 |--|-------|----------------|
 | 1. | [PiCo-M](#pico-m) | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
-| 2. | Age categories<sup>[1](#pico-m),[2](#enslaved.org)</sup> | Person observations sometimes only state an age category (child vs adult) rather than the exact age  |
+| 2. | Age categories<sub>[1](#pico-m),[2](#enslaved.org)</sub> | Person observations sometimes only state an age category (child vs adult) rather than the exact age  |
 | 3. | [Enumerations](#pico-m) | How to model enslaved who are listed as part of an enumeration (for example age category, color, sex) |
 | 4. | [Name changes](#pico-m) | Emancipation and manumission records refer to one person, but contain multiple names (enslaved and free name) |
 | 5. | [Observation or reconstruction](#pico-m) | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
