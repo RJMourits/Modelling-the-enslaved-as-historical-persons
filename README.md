@@ -167,13 +167,13 @@ However, we advise to also add the beginning and end date of the observed enslav
 |----|----|----|----|----|
 | hdsc:enslaved1 | a | pico:PersonObservation ; | | |
 | | ed:P33 | ed:Q109 ; | | |
-| | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
+| | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 ; |
 | | | | sdo:startDate | "1837-08-15"^^xsd:date ; |
 | | | | sdo:endDate | "1838"^^xsd:gYear ; |
 | | | ] . | | |
 | hdsc:enslaved2 | a | pico:PersonObservation ; | | |
 | | ed:P33 | ed:Q109 ; | | |
-| | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 |
+| | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 ; |
 | | | | sdo:startDate | "1837-08-16"^^xsd:date ; |
 | | | | sdo:endDate | "1838"^^xsd:gYear ; |
 | | | ] . | | |
