@@ -152,32 +152,32 @@ Both enslaved and free persons can be modelled as picom:PersonObservations. We u
 
 | Object | Property | Object |
 |----|----|----|
-| hdsc:enslaved1 | a | pico:PersonObservation ; |
+| hdsc:enslaved1 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | XXX:isEnslavedBy | hdsc:owner1 . |
-| hdsc:enslaved2 | a | pico:PersonObservation ; |
+| hdsc:enslaved2 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | XXX:isEnslavedBy | hdsc:owner1 . |
-| hdsc:owner1 | a | pico:PersonObservation ; |
+| hdsc:owner1 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | XXX:isEnslaverOf | hdsc:enslaved1, hdsc:enslaved2 . |
 
 However, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:enslaved1 | a | pico:PersonObservation ; | | |
+| hdsc:enslaved1 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
 | | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] . | | |
-| hdsc:enslaved2 | a | pico:PersonObservation ; | | |
+| hdsc:enslaved2 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
 | | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-16"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] . | | |
-| hdsc:owner1 | a | pico:PersonObservation ; | | |
+| hdsc:owner1 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | XXX:isEnslaverOf | [ | rdf:value | hdsc:enslaved1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
@@ -191,7 +191,7 @@ We also describe the start and end date of person observations using [sdo:startD
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:enslaved1 | a | pico:PersonObservation ; | | |
+| hdsc:enslaved1 | a | [pico:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
 | | XXX:isEnslavedBy | [ | rdf:value | hdsc:owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
