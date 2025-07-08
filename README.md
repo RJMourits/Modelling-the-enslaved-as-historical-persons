@@ -33,7 +33,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 8. | [Reasons for observation](#enslaved.org) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
 | 9. | Relations<sup>[1](#enslaved.org),[2](#required-specialised-properties)</sup> | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
 | 10. | Slaveholders<sup>[1](#schema.org),[2](#wikidata)]</sup> | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
-| 11. | Slave voyages<sup>[1](#schema.org),[2](#slavevoyage.net),[3](#required-specialised-properties)</sup>  | Ships are required to model slave voyages |
+| 11. | Slave voyages<sup>[1](#schema.org),[2](#slavevoyage.net),[3](#required-specialised-classes)</sup>  | Ships are required to model slave voyages |
 | 12. | Social categories<sup>[1](#enslaved.org),[2](#required-specialised-properties)</sup> | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
 | 13. | Taxonomies and Thesauri<sup>[1](#wikidata),[2](#taxonomies-and-thesauri)</sup> | Person observations often contain social categories related to race, class, or religion |
 | 14. | [Toponyms](#person-name-vocabulary) | Person names of enslaved often contain a toponym with which they have an association. The exact meaning is ambiguous, but the association with the place is, for example, required to reconstruct persons |
@@ -79,7 +79,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). These properties can be made reflexive with [_affiliation_](https://schema.org/affiliation) | **yes** |
-
+| 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) 
 
 ### SlaveVoyages.net + Exploring Slave Trade in Asia (ESTA)
 
@@ -93,6 +93,12 @@ For each of these issues, we checked whether solutions were available in the Per
 |--|-------|----------------|-------|
 | 10. | Slaveholders | WikiData can be used to specify the type of organization, and give a definiton of that organization. For example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
 | 13. | Taxonomies and Thesauri | Thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
+
+
+### Required specialised classes
+|  | Issue | Description	  | class | 
+|--|-------|----------------|-------|
+| 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) 
 
 
 ### Required specialised properties
