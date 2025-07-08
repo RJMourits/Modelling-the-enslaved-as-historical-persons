@@ -17,13 +17,13 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 - [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
 - [Taxonomies and thesauri](#taxonomies-and-thesauri)
   - [Enslavement status](#enslavement-status)
-  - [Manumission](#manumission)
   - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
   - [Relation enslaved - legal representative](#relation-enslaved---legal-representative)
   - [Relation owner - legal representative](#relation-owner---legal-representative)
   - [Plantations (and other organisations)](#plantations-and-other-organisations)
   - [Slave voyages](#slave-voyages)
   - [Group observations](#group-observations)
+  - [Manumission](#manumission)
 
 
 ## Introduction
@@ -149,12 +149,18 @@ For each of these issues, we checked whether solutions were available in the Per
 ## Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
-### Enslavement status
 
-### Manumission
+### Enslavement status
+Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). 
+
+| Object | Property | Object |
+|----|----|----|
+| hdsc:enslaved1 | a | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
+
 
 ### Relation enslaved - enslaver
-Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. In its simplest form, this would result in the following triples.
+We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. In its simplest form, this would result in the following triples.
 
 | Object | Property | Object |
 |----|----|----|
@@ -220,4 +226,6 @@ We also describe the start and end date of person observations using [sdo:startD
 ### Slave voyages
 
 ### Group observations
+
+### Manumission
 
