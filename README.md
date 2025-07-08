@@ -150,13 +150,13 @@ Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we m
 ### Relation enslaved - enslaver
 We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. These properties should be dated using a blank note using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate).
 
-hdsc:010820b1983
-  a                         pico:PersonObservation ;
-  ed:P33                    enslaved:Q109 ;  #hasPersonStatus  Enslaved
-  XXX:isEnslavedBy          [ 
-                              rdf:value               hdsc:owner1 ;
-                              sdo:startDate           "1837-08-15"^^xsd:date ;
-                              sdo:endDate             "1838"^^xsd:gYear ; ] .
+hdsc:010820b1983 <br>
+  a                         pico:PersonObservation ; <br>
+  ed:P33                    enslaved:Q109 ;  #hasPersonStatus  Enslaved <br>
+  XXX:isEnslavedBy          [ <br>
+                              rdf:value               hdsc:owner1 ;<br>
+                              sdo:startDate           "1837-08-15"^^xsd:date ;<br>
+                              sdo:endDate             "1838"^^xsd:gYear ; ] .<br>
   sdo:startDate             [ 
                               rdf:value               "1837-08-15"^^xsd:date ;
                               ed:P30                  ed:153 ; ] ;  #hasEventType  Sale or Transfer
