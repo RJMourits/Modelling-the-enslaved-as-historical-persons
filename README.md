@@ -5,8 +5,16 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 - [Introduction](#introduction)
 - [Specification](#specification)
 - [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
+  - [PiCo-M](#pico-m)
+  - [Enslaved.org](#enslave.org)
+  - [Person Name Vocabulary](#person-name-vocabulary)
+  - [Schema.org](#schema.org)
+  - [SlaveVoyages.net + Exploring Slave Trade in Asia (ESTA)](#slavevoyages.net-+-exploring-slave-trade-in-asia-(esta))
+  - [WikiData](#WikiData)
+  - [Required specialised classes](#required-specialised-classes)
+  - [Required specialised properties](#required-specialised-properties)
 - [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
-- - Test
+- [Taxonomies and thesauri](#taxonomies-and-thesauri)
 
 @### Relation enslaved - enslaver
 @### Relation enslaved - legal representative
@@ -88,12 +96,13 @@ For each of these issues, we checked whether solutions were available in the Per
 | 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model. (Update 2025/04/17: PNV is willing to extend if we provide them with a proposal for this property.) | **willing to extend** |
 
 
-### Schema.org / Organization ontology
+### Schema.org
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). These properties can be made reflexive with [_affiliation_](https://schema.org/affiliation) | **yes** |
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) 
+
 
 ### SlaveVoyages.net + Exploring Slave Trade in Asia (ESTA)
 
@@ -132,8 +141,23 @@ For each of these issues, we checked whether solutions were available in the Per
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
 ### Relation enslaved - enslaver
-We use the properties isEnslavedBy isEnslaved
+We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. These properties should be dated using a blank note using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate).
 
+hdsc:010820b1983
+  a                         pico:PersonObservation ;
+  ed:P33                    enslaved:Q109 ;  #hasPersonStatus  Enslaved
+  XXX:isEnslavedBy          [ 
+                              rdf:value               hdsc:owner1 ;
+                              sdo:startDate           "1837-08-15"^^xsd:date ;
+                              sdo:endDate             "1838"^^xsd:gYear ; ] .
+  sdo:startDate             [ 
+                              rdf:value               "1837-08-15"^^xsd:date ;
+                              ed:P30                  ed:153 ; ] ;  #hasEventType  Sale or Transfer
+  sdo:endDate               [
+                              rdf:value               "1838"^^xsd:gYear ;
+                              ed:P30                  ed:Q250 ; ] .  #hasEventType Registration 
+
+  
 ### Relation enslaved - legal representative
 
 ### Relation owner - legal representative
