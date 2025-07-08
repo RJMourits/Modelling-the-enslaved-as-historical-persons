@@ -150,10 +150,10 @@ Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we m
 ### Relation enslaved - enslaver
 We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. These properties should be dated using a blank note using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate).
 
-| Object | Property | Object |  | 
-|----|----|----|----|
+| Object | Property | Object |
+|----|----|----|
 | hdsc:010820b1983 | a | pico:PersonObservation ; |
-| | ed:P33 | ed:Q109 | |
+| | ed:P33 | ed:Q109 . |
 
   
 ### Relation enslaved - legal representative
