@@ -138,6 +138,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
 | 9. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
+| 11. | Slave voyages |  | **slaveVoyage** |
 | 12. | Social categories |  | **hasSocialIdentity** |
 
 
@@ -292,7 +293,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 | Object | Property | Object |
 |----|----|----|
-| hdsc:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization)
+| hdsc:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization) |
 | | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
 | | [sdo:name](https://schema.org/name) | "Voorbeeld" ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person1 ; |
@@ -314,10 +315,22 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 
 ### Slave voyages
+| Object | Property | Object |
+|----|----|----|
+| esta:Voyage1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | XXX:MainVoyage, [sdo:TransferAction](https://schema.org/TransferAction) . |
+| esta:Voyage1a | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | XXX:SubVoyage, [sdo:TransferAction](https://schema.org/TransferAction) ; |
+| | [sdo:memberOf](sdo:memberOf) | esta:Voyage1 ; |
+| | [sdo:startDate](sdo:startDate) | "1824-06-10"^^xsd:date ; |
+| | [sdo:startLocation](sdo:startLocation) | "Manilla" ; |
+| | [sdo:endDate](sdo:endDate) | "1824-07-11"^^xsd:date ; |
+| | [sdo:toLocation](sdo:toLocation) | "Antananarivo" . |
+
+
+
+
+### Manumission
 
 
 ### Group observations
 
-
-### Manumission
 
