@@ -165,37 +165,37 @@ We use the properties isEnslavedBy and isEnslaverOf to model the relationship be
 
 | Object | Property | Object |
 |----|----|----|
-| hdsc:enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| hdsc:Enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
-| | XXX:isEnslavedBy | hdsc:owner1 . |
-| hdsc:enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | XXX:isEnslavedBy | hdsc:Owner1 . |
+| hdsc:Enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
-| | XXX:isEnslavedBy | hdsc:owner1 . |
-| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | XXX:isEnslaverOf | hdsc:enslaved1, hdsc:enslaved2 . |
+| | XXX:isEnslavedBy | hdsc:Owner1 . |
+| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | XXX:isEnslaverOf | hdsc:Enslaved1, hdsc:Enslaved2 . |
 
 However, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| hdsc:Enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
-| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] . | | |
-| hdsc:enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| hdsc:Enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
-| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-16"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] . | | |
-| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | XXX:isEnslavedOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Enslaved1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] ; | | |
-| | XXX:isEnslavedOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Enslaved2 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-16"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] . | | |
@@ -223,24 +223,24 @@ Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents 
 
 | Object | Property | Object |
 |----|----|----|
-| hdsc:freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| hdsc:Freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; |
-| | XXX:legallyRepresentedBy | hdsc:intermediary1 . |
-| hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | XXX:legallyRepresents | hdsc:freedperson1 . |
+| | XXX:legallyRepresentedBy | hdsc:Intermediary1 . |
+| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | XXX:legallyRepresents | hdsc:Freedperson1 . |
 
 We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
 
 | Object | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| hdsc:Freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; | | |
-| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:intermediary1 ; |
+| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Intermediary1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
-| hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:freedperson1 ; |
+| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Freedperson1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
@@ -251,37 +251,37 @@ Owners are sometimes represented by an intermediary or by their spouse. This is 
 
 | Object | Property | Object |
 |----|----|----|
-| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) |
-| | [sdo:spouse](https://schema.org/spouse) | hdsc:intermediary1 ; |
-| | XXX:legallyRepresentedBy | hdsc:intermediary1 . |
-| hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:spouse](https://schema.org/spouse) | hdsc:Intermediary1 ; |
+| | XXX:legallyRepresentedBy | hdsc:Intermediary1 . |
+| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) |
-| | [sdo:spouse](https://schema.org/spouse) | hdsc:owner1 ; |
-| | XXX:legallyRepresents | hdsc:owner1 . |
+| | [sdo:spouse](https://schema.org/spouse) | hdsc:Owner1 ; |
+| | XXX:legallyRepresents | hdsc:Owner1 . |
 
 We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
 
 | Object | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; | | |
-| | [sdo:spouse](https://schema.org/spouse) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:intermediary1 ; |
+| | [sdo:spouse](https://schema.org/spouse) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Intermediary1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] ; | | |
-| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:intermediary1 ; |
+| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Intermediary1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
-| hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) | | |
-| | [sdo:spouse](https://schema.org/spouse) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | [sdo:spouse](https://schema.org/spouse) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] ; | | |
-| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
@@ -289,6 +289,23 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 
 ### Plantations (and other organisations)
+
+| Object | Property | Object |
+|----|----|----|
+| hdsc:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization)
+| | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person1 |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person2 |
+| | XXX:isEnslaverOf | hdsc:Person3 |
+| hdsc:Person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 |
+| | [sdo:owns](https://schema.org/owns) | hdsc:Organization1 . |
+| hdsc:Person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 |
+| | [sdo:owns](https://schema.org/owns) | hdsc:Organization1 . |
+| hdsc:Person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
+| | hdsc:isEnslavedBy | hdsc:Organization1 . |
 
 
 ### Slave voyages
