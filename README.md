@@ -180,7 +180,7 @@ However, we advise to also add the beginning and end date of the observed enslav
 |----|----|----|----|----|
 | hdsc:enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
-| | XXX:isEnslavedBy | [ | rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
 | | | ] . | | |
