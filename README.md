@@ -293,8 +293,8 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | Object | Property | Object |
 |----|----|----|
 | hdsc:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization)
-| | [sdo:name](https://schema.org/name) | "Voorbeeld" ; |
 | | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
+| | [sdo:name](https://schema.org/name) | "Voorbeeld" ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person1 ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person2 ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person3 ; |
