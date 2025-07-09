@@ -293,17 +293,22 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | Object | Property | Object |
 |----|----|----|
 | hdsc:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization)
-| | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person1 |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person2 |
-| | XXX:isEnslaverOf | hdsc:Person3 |
+| | [sdo:name](https://schema.org/name) | "Voorbeeld" ; |
+| | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person1 ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person2 ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person3 ; |
+| | XXX:isEnslaverOf | hdsc:Person4 . |
 | hdsc:Person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 ; |
 | | [sdo:owns](https://schema.org/owns) | hdsc:Organization1 . |
 | hdsc:Person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 |
-| | [sdo:owns](https://schema.org/owns) | hdsc:Organization1 . |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 ; |
+| | [sdo:funder](https://schema.org/funder) | hdsc:Organization1 . |
 | hdsc:Person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 ; |
+| | [sdo:employee](https://schema.org/employee) | hdsc:Organization1 . |
+| hdsc:Person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | hdsc:isEnslavedBy | hdsc:Organization1 . |
 
