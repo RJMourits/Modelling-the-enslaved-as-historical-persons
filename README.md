@@ -235,12 +235,12 @@ We advise to also add the beginning and end date of the observed enslaved relati
 |----|----|----|----|----|
 | hdsc:freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; | | |
-| | XXX:legallyRepresentedBy | [ [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:intermediary1 ; |
+| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:intermediary1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
 | hdsc:intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | XXX:legallyRepresents | [ [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
+| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
