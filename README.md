@@ -44,10 +44,10 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 - New extensions can be introduced with consensus between the HDSC, Globalised, and ESTA
 - The model should be easily transposable to the Enslaved.org data model
 
+<br>
+
 ## Evaluation of the PiCo model
 During three meetings in Q1 2025, we identified the following issues in implementing PiCo-M for historical person data on slave history:
-
-<br>
 
 |  | Issue | Description	  |
 |--|-------|----------------|
@@ -150,6 +150,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |--|-------|----------------|----------|
 | 13. | Taxonomies and Thesauri | Person observations often contain social categories related to race, class, or religion |
 
+<br>
 
 ## Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
