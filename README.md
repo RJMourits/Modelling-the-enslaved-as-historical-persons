@@ -10,7 +10,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
   - [Person Name Vocabulary](#person-name-vocabulary)
   - [Schema.org](#schemaorg)
-  - [SlaveVoyages.net](#slavevoyages.net)
+  - [SlaveVoyages.net](#slavevoyages)
   - [WikiData](#WikiData)
   - [Required specialised classes](#required-specialised-classes)
   - [Required specialised properties](#required-specialised-properties)
