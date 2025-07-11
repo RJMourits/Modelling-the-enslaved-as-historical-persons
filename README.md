@@ -6,7 +6,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 2. [Specification](#specification)
 3. [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
 4. [Integration of existing schemas](#integration-of-existing-schemas)
-  - [PiCo-M](#pico-m)
+   4.1. [PiCo-M](#pico-m)
   - [Enslaved.org](#enslavedorg)
   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
   - [Person Name Vocabulary](#person-name-vocabulary)
