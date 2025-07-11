@@ -10,7 +10,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
   - [Person Name Vocabulary](#person-name-vocabulary)
   - [Schema.org](#schemaorg)
-  - [SlaveVoyages.net](#slavevoyages)
+  - [SlaveVoyages](#slavevoyages)
   - [WikiData](#WikiData)
   - [Required specialised classes](#required-specialised-classes)
   - [Required specialised properties](#required-specialised-properties)
@@ -58,7 +58,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 8. | [Reasons for observation](#enslavedorg) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
 | 9. | Relations<sup>[1](#enslavedorg),[2](#required-specialised-properties)</sup> | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
 | 10. | Slaveholders<sup>[1](#schemaorg),[2](#wikidata)</sup> | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
-| 11. | Slave voyages<sup>[1](#schemaorg),[2](#exploring-slave-trade-in-asia-esta),[3](#slavevoyage),[4](#required-specialised-classes)</sup>  | Ships are required to model slave voyages |
+| 11. | Slave voyages<sup>[1](#schemaorg),[2](#exploring-slave-trade-in-asia-esta),[3](#slavevoyages),[4](#required-specialised-classes)</sup>  | Ships are required to model slave voyages |
 | 12. | Social categories<sup>[1](#enslavedorg),[2](#required-specialised-properties)</sup> | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
 | 13. | Taxonomies and Thesauri<sup>[1](#wikidata),[2](#taxonomies-and-thesauri)</sup> | Person observations often contain social categories related to race, class, or religion |
 | 14. | [Toponyms](#person-name-vocabulary) | Person names of enslaved often contain a toponym with which they have an association. The exact meaning is ambiguous, but the association with the place is, for example, required to reconstruct persons |
