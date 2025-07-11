@@ -2,9 +2,9 @@
 
 Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
 
-- [Introduction](#1-introduction)
-- [Specification](#specification)
-- [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
+1. [Introduction](#1-introduction)
+2. [Specification](#specification)
+3. [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
   - [PiCo-M](#pico-m)
   - [Enslaved.org](#enslavedorg)
   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
