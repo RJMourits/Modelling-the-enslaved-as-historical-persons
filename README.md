@@ -2,11 +2,11 @@
 
 Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
 
-1. [Introduction](#1-introduction)
-2. [Specification](#specification)
-3. [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
-4. [Integration of existing schemas](#integration-of-existing-schemas)
-   4.1. [PiCo-M](#pico-m)
+- [Introduction](#1-introduction)
+- [Specification](#specification)
+- [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
+- [Integration of existing schemas](#integration-of-existing-schemas)
+  - [PiCo-M](#pico-m)
   - [Enslaved.org](#enslavedorg)
   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
   - [Person Name Vocabulary](#person-name-vocabulary)
@@ -16,7 +16,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Required specialised classes](#required-specialised-classes)
   - [Required specialised properties](#required-specialised-properties)
   - [Taxonomies and thesauri](#taxonomies-and-thesauri)
-5. [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
+- [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
   - [Enslavement status](#enslavement-status)
   - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
   - [Relation enslaved - legal representative](#relation-enslaved---legal-representative)
