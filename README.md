@@ -2,7 +2,7 @@
 
 Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
 
-- [1. Introduction](#introduction)
+- [1. Introduction](#1_introduction)
 - [Specification](#specification)
 - [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
   - [PiCo-M](#pico-m)
