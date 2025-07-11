@@ -2,14 +2,13 @@
 
 Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
 
-100. First list item
-     - First nested list item
-    
+1. [Introduction](#1-introduction)
+2. [Specification](#specification)
+3. [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
+4. [Integration of existing schemas](#integration-of-existing-schemas)
+   - First nested list item
 
-- [Introduction](#1-introduction)
-- [Specification](#specification)
-- [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
-- [Integration of existing schemas](#integration-of-existing-schemas)
+
   - [PiCo-M](#pico-m)
   - [Enslaved.org](#enslavedorg)
   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
