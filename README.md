@@ -34,6 +34,7 @@ The PiCo model states how information on common factors in historical person obs
 
 The PiCo model reuses as many existing URIs as possible to describe historical person data, as it encourages communities to give the same name to the same entity. This prevents discussions on naming and describing resources that have already been authoritatively defined, such as birth dates or names. Moreover, this makes data more findable as people can search on one common term, rather than having to waste time on resolving a potentially endless list of variations in modelling the same concept. And, perhaps even more importantly, it also enforces stringent definitions of properties and resources that can be used for efficient knowledge interfering
 
+<br>
 
 ## Specifications
 - Persons are modelled as standardised in the Persons in Context model (PiCo-M)
@@ -45,6 +46,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 ## Evaluation of the PiCo model
 During three meetings in Q1 2025, we identified the following issues in implementing PiCo-M for historical person data on slave history:
 
+<br>
 
 |  | Issue | Description	  |
 |--|-------|----------------|
