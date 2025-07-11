@@ -27,7 +27,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 
 <br>
 
-## Introduction
+## 1. Introduction
 
 In this document, we reflect on how to implement historical person data on enslaved people as Linked Data. Our aim is to use the [PiCo model](https://www.personsincontext.org) to fit all historical person observations  and to provide flexibility and guidelines for extending the model.
 
@@ -37,7 +37,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 
 <br>
 
-## Specifications
+## 2. Specifications
 - Persons are modelled as standardised in the Persons in Context model (PiCo-M)
 - Where possible, extensions to the model are based on existing vocabularies
 - Extensions to the model follow the logic of concentric description: where possible global (Schema.org), otherwise domain-specific (Enslaved.org), or specialised (Person Name Vocabulary)
@@ -46,7 +46,7 @@ The PiCo model reuses as many existing URIs as possible to describe historical p
 
 <br>
 
-## Evaluation of the PiCo model
+## 3. Evaluation of the PiCo model
 During three meetings in Q1 2025, we identified the following issues in implementing PiCo-M for historical person data on slave history:
 
 |  | Issue | Description	  |
@@ -67,11 +67,13 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 14. | [Toponyms](#person-name-vocabulary) | Person names of enslaved often contain a toponym with which they have an association. The exact meaning is ambiguous, but the association with the place is, for example, required to reconstruct persons |
 | 15. | [Type of enslavement](#enslavedorg) | There is no property to describe the type of enslavement |
 
-## Integration of existing schemas
+<br>
+
+## 4. Integration of existing schemas
 
 For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse in and presented our outcomes in Q1 and Q2 2025.
 
-### PiCo-M
+### 4.1. PiCo-M
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
@@ -82,7 +84,7 @@ For each of these issues, we checked whether solutions were available in the Per
 | 5. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allows for interpretation. <br> _**In case the relation to the source is lost, and records probably contain interpretation by the data provider, we suggest to use person reconstructions**_ | **yes** |
 
 
-### Enslaved.org
+### 4.2. Enslaved.org
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
