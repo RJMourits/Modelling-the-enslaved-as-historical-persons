@@ -25,6 +25,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Group observations](#group-observations)
   - [Manumission](#manumission)
 
+<br>
 
 ## Introduction
 
