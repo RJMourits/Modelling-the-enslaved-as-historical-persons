@@ -24,7 +24,6 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
   - [Slave voyages](#slave-voyages)
   - [Group observations](#group-observations)
   - [Manumission](#manumission)
-<br>
 
 
 ## Introduction
