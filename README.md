@@ -105,6 +105,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
 
+<br>
 
 ### 4.4. Person Name Vocabulary
 
@@ -113,6 +114,7 @@ For each of these issues, we checked whether solutions were available in the Per
 | 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with [_nameSpecification_](https://www.lodewijkpetram.nl/vocab/pnv/doc/#nameSpecification) | **yes** |
 | 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model. (Update 2025/04/17: PNV is willing to extend if we provide them with a proposal for this property.) | **willing to extend** |
 
+<br>
 
 ### 4.5. Schema.org
 
@@ -121,6 +123,7 @@ For each of these issues, we checked whether solutions were available in the Per
 | 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). These properties can be made reflexive with [_affiliation_](https://schema.org/affiliation) | **yes** |
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) 
 
+<br>
 
 ### 4.6. SlaveVoyages
 
@@ -128,6 +131,7 @@ For each of these issues, we checked whether solutions were available in the Per
 |--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **in contact** |
 
+<br>
 
 ### 4.7. WikiData
 |  | Issue | Description	  | Reuse |
@@ -135,12 +139,14 @@ For each of these issues, we checked whether solutions were available in the Per
 | 10. | Slaveholders | WikiData can be used to specify the type of organization, and give a definiton of that organization. For example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
 | 13. | Taxonomies and Thesauri | Thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
 
+<br>
 
 ### 4.8. Required specialised classes
 |  | Issue | Description	  | class | 
 |--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
 
+<br>
 
 ### 4.9. Required specialised properties
 |  | Issue | Description	  | property | 
@@ -149,6 +155,7 @@ For each of these issues, we checked whether solutions were available in the Per
 | 11. | Slave voyages |  | **slaveVoyage** |
 | 12. | Social categories |  | **hasSocialIdentity** |
 
+<br>
 
 ### 4.10. Taxonomies and thesauri
 |  | Issue | Description	  | property | 
