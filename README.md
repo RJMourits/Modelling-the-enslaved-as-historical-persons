@@ -49,20 +49,20 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 |  | Issue | Description	  |
 |--|-------|----------------|
 | 1. | [PiCo-M](#pico-m) | The logic of the Persons in Context model is easily applicable to data on enslaved persons |
-| 2. | Age categories<sup>[1](#pico-m),[2](#enslaved.org)</sup> | Person observations sometimes only state an age category (child vs adult) rather than the exact age  |
+| 2. | Age categories<sup>[1](#pico-m),[2](#enslavedorg)</sup> | Person observations sometimes only state an age category (child vs adult) rather than the exact age  |
 | 3. | [Enumerations](#pico-m) | How to model enslaved who are listed as part of an enumeration (for example age category, color, sex) |
 | 4. | [Name changes](#pico-m) | Emancipation and manumission records refer to one person, but contain multiple names (enslaved and free name) |
 | 5. | [Observation or reconstruction](#pico-m) | The distinction between person observations and person reconstructions, but not always clear with old data (no link to the historical source, information added by researchers) |
 | 6. | [Person names](#person-name-vocabulary) | Person names can contain African names, Christian names, and person descriptions |
-| 7. | [Person status](#enslaved.org) | There is no property to describe whether someone is enslaved |
-| 8. | [Reasons for observation](#enslaved.org) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
-| 9. | Relations<sup>[1](#enslaved.org),[2](#required-specialised-properties)</sup> | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
+| 7. | [Person status](#enslavedorg) | There is no property to describe whether someone is enslaved |
+| 8. | [Reasons for observation](#enslavedorg) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
+| 9. | Relations<sup>[1](#enslavedorg),[2](#required-specialised-properties)</sup> | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
 | 10. | Slaveholders<sup>[1](#schema.org),[2](#wikidata)</sup> | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
 | 11. | Slave voyages<sup>[1](#schema.org),[2](#exploring-slave-trade-in-asia-esta),[3](#slavevoyage.net),[4](#required-specialised-classes)</sup>  | Ships are required to model slave voyages |
-| 12. | Social categories<sup>[1](#enslaved.org),[2](#required-specialised-properties)</sup> | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
+| 12. | Social categories<sup>[1](#enslavedorg),[2](#required-specialised-properties)</sup> | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
 | 13. | Taxonomies and Thesauri<sup>[1](#wikidata),[2](#taxonomies-and-thesauri)</sup> | Person observations often contain social categories related to race, class, or religion |
 | 14. | [Toponyms](#person-name-vocabulary) | Person names of enslaved often contain a toponym with which they have an association. The exact meaning is ambiguous, but the association with the place is, for example, required to reconstruct persons |
-| 15. | [Type of enslavement](#enslaved.org) | There is no property to describe the type of enslavement |
+| 15. | [Type of enslavement](#enslavedorg) | There is no property to describe the type of enslavement |
 
 ## Integration of existing schemas
 
