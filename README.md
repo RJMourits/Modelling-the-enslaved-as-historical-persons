@@ -3,28 +3,28 @@
 Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
 
 1. [Introduction](#1-introduction)
-2. [Specification](#specification)
-3. [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
-4. [Integration of existing schemas](#integration-of-existing-schemas)
-   - [PiCo-M](#pico-m)
-   - [Enslaved.org](#enslavedorg)
-   - [Exploring Slave Trade in Asia (ESTA)](#exploring-slave-trade-in-asia-esta)
-   - [Person Name Vocabulary](#person-name-vocabulary)
-   - [Schema.org](#schemaorg)
-   - [SlaveVoyages](#slavevoyages)
-   - [WikiData](#WikiData)
-   - [Required specialised classes](#required-specialised-classes)
-   - [Required specialised properties](#required-specialised-properties)
-   - [Taxonomies and thesauri](#taxonomies-and-thesauri)
-5. [Exentensions of the PiCo model](#exentensions-of-the-PiCo-model)
-   - [Enslavement status](#enslavement-status)
-   - [Relation enslaved - enslaver](#relation-enslaved---enslaver)
-   - [Relation enslaved - legal representative](#relation-enslaved---legal-representative)
-   - [Relation owner - legal representative](#relation-owner---legal-representative)
-   - [Plantations (and other organisations)](#plantations-and-other-organisations)
-   - [Slave voyages](#slave-voyages)
-   - [Group observations](#group-observations)
-   - [Manumission](#manumission)
+2. [Specification](#2-specification)
+3. [Evaluation of the PiCo model](#3-evaluation-of-the-pico-model)
+4. [Integration of existing schemas](#4-integration-of-existing-schemas)
+   - [4.1. PiCo-M](#41-pico-m)
+   - [4.2. Enslaved.org](#42-enslavedorg)
+   - [4.3. Exploring Slave Trade in Asia (ESTA)](#43-exploring-slave-trade-in-asia-esta)
+   - [4.4. Person Name Vocabulary](#44-person-name-vocabulary)
+   - [4.5. Schema.org](#45-schemaorg)
+   - [4.6. SlaveVoyages](#46-slavevoyages)
+   - [4.7. WikiData](#47-WikiData)
+   - [4.8. Required specialised classes](#48-required-specialised-classes)
+   - [4.9. Required specialised properties](#49-required-specialised-properties)
+   - [4.10. Taxonomies and thesauri](#410-taxonomies-and-thesauri)
+5. [Exentensions of the PiCo model](#5-exentensions-of-the-PiCo-model)
+   - [5.1. Enslavement status](#51-enslavement-status)
+   - [5.2. Relation enslaved - enslaver](#52-relation-enslaved---enslaver)
+   - [5.3. Relation enslaved - legal representative](#53-relation-enslaved---legal-representative)
+   - [5.4. Relation owner - legal representative](#54-relation-owner---legal-representative)
+   - [5.5. Plantations (and other organisations)](#55-plantations-and-other-organisations)
+   - [5.6. Slave voyages](#56-slave-voyages)
+   - [5.7. Group observations](#57-group-observations)
+   - [5.8. Manumission](#58-manumission)
 
 <br>
 
@@ -97,14 +97,14 @@ For each of these issues, we checked whether solutions were available in the Per
 | 15. | Type of enslavement | [_hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) can be used to model the type of enslavement. However, the seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192) are too specific to be broadly used, and too broad to be used specifically | **yes** |
 
 
-### Exploring Slave Trade in Asia (ESTA)
+### 4.3. Exploring Slave Trade in Asia (ESTA)
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
 
 
-### Person Name Vocabulary
+### 4.4. Person Name Vocabulary
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
@@ -112,7 +112,7 @@ For each of these issues, we checked whether solutions were available in the Per
 | 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model. (Update 2025/04/17: PNV is willing to extend if we provide them with a proposal for this property.) | **willing to extend** |
 
 
-### Schema.org
+### 4.5. Schema.org
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
@@ -120,27 +120,27 @@ For each of these issues, we checked whether solutions were available in the Per
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) 
 
 
-### SlaveVoyages
+### 4.6. SlaveVoyages
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **in contact** |
 
 
-### WikiData
+### 4.7. WikiData
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | WikiData can be used to specify the type of organization, and give a definiton of that organization. For example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
 | 13. | Taxonomies and Thesauri | Thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
 
 
-### Required specialised classes
+### 4.8. Required specialised classes
 |  | Issue | Description	  | class | 
 |--|-------|----------------|-------|
 | 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
 
 
-### Required specialised properties
+### 4.9. Required specialised properties
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
 | 9. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
@@ -148,18 +148,18 @@ For each of these issues, we checked whether solutions were available in the Per
 | 12. | Social categories |  | **hasSocialIdentity** |
 
 
-### Taxonomies and thesauri
+### 4.10. Taxonomies and thesauri
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
 | 13. | Taxonomies and Thesauri | Person observations often contain social categories related to race, class, or religion |
 
 <br>
 
-## Exentensions of the PiCo model
+## 5. Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
 
-### Enslavement status
+### 5.1. Enslavement status
 Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). 
 
 | Object | Property | Object |
@@ -168,7 +168,7 @@ Both enslaved and free persons can be modelled as picom:PersonObservations. We u
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
 
 
-### Relation enslaved - enslaver
+### 5.2. Relation enslaved - enslaver
 We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. In its simplest form, this would result in the following triples.
 
 | Object | Property | Object |
@@ -226,7 +226,7 @@ We also describe the start and end date of person observations using [sdo:startD
 | | | ] . | | |
 
   
-### Relation enslaved - legal representative
+### 5.3. Relation enslaved - legal representative
 Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -254,7 +254,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | ] . | | |
 
 
-### Relation owner - legal representative
+### 5.4. Relation owner - legal representative
 Owners are sometimes represented by an intermediary or by their spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -296,7 +296,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 
 
-### Plantations (and other organisations)
+### 5.5. Plantations (and other organisations)
 
 | Object | Property | Object |
 |----|----|----|
@@ -321,7 +321,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | hdsc:isEnslavedBy | hdsc:Organization1 . |
 
 
-### Slave voyages
+### 5.6. Slave voyages
 | Object | Property | Object |
 |----|----|----|
 | esta:Voyage1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | XXX:MainVoyage, [sdo:TransferAction](https://schema.org/TransferAction) . |
@@ -335,9 +335,9 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 
 
-### Manumission
+### 5.7. Manumission
 
 
-### Group observations
+### 5.8. Group observations
 
 
