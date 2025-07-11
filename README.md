@@ -6,7 +6,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 2. [Specification](#specification)
 3. [Evaluation of the PiCo model](#evaluation-of-the-pico-model)
 4. [Integration of existing schemas](#integration-of-existing-schemas)
-   - First nested list item
+   4.1. First nested list item
 
 
   - [PiCo-M](#pico-m)
