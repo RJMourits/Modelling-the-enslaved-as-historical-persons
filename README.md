@@ -145,8 +145,8 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 ### 4.8. Required specialised concepts
 The concept SlaveVoyage is introduced to specify [_sdo:TransferAction_](https://schema.org/TransferAction).
 
-|  | Issue | Description	 | class | 
-|--|-------|----------------|-------|
+|  | Issue | Description	 | concept | 
+|--|-------|----------------|---------|
 | 11. | Slave voyages | Although [_sdo:TransferAction_](https://schema.org/TransferAction) can be used to model slave voyage, but the term is too broad and insensitive. Therefore, we follow the example of SlaveVoyages and ESTA and use the concept SlaveVoyage to describe slave transports. | **SlaveVoyage** |
 
 
