@@ -53,14 +53,14 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 |  | Issue | Description	  |
 |--|-------|----------------|
 | 1. | [PiCo-M](#41-pico-m) | A basic descriptive model is necessary to describe observations and reconstructions of enslaved persons |
-| 2. | Age categories<sup>[1](#41-pico-m),[2](#42-enslavedorg)</sup> | Person observations sometimes only state an age category (child vs adult) rather than the exact age  |
-| 3. | [Enumerations](#41-pico-m) | How to model enslaved who are listed as part of an enumeration (for example age category, color, sex) |
-| 4. | [Name changes](#41-pico-m) | Emancipation and manumission records refer to one event and person, but contain different names (enslaved and free name) |
-| 5. | [Observation or reconstruction](#41-pico-m) | The distinction between person observations and person reconstructions is not always clear with old data (no link to the historical source, information added by researchers) |
+| 2. | Age categories<sup>[1](#41-pico-m),[2](#42-enslavedorg)</sup> | Some person observations only contain an age category (child vs adult) rather than the exact age  |
+| 3. | [Enumerations](#41-pico-m) | Certain sources only information about groups rather than individuals. A structure is necessary to model the enslaved who are only observed as an enumeration |
+| 4. | [Name changes](#41-pico-m) | Emancipation and manumission records refer to one event, but contains two observations for the same (enslaved and free) person |
+| 5. | [Observation or reconstruction](#41-pico-m) | The distinction between person observations and person reconstructions is not always clear with old data, as the preserved datasets are an undocumented mix of original and enriched data without a link to the original source |
 | 6. | [Person names](#44-person-name-vocabulary) | Person names can contain African names, Christian names, and person descriptions |
 | 7. | [Person status](#42-enslavedorg) | There is no property to describe whether someone is enslaved |
 | 8. | [Reasons for observation](#42-enslavedorg) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
-| 9. | Relations<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Properties to describe relationships for enslavement (slaveholder and enslaved) or legal representation (owner and legal representative, e.g. nomine uxoris) |
+| 9. | Relations<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Properties to describe relationships between slaveholder and enslaved, freed persons and ["straatvoogden"](https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/suriname-vrijgelaten-slaven-manumissies-1832-1863), or slave owners and legal their representative. The latter group includes women who are legally represented by their husband, also known as nomine uxoris |
 | 10. | Slaveholders<sup>[1](#45-schemaorg),[2](#47-wikidata)</sup> | Slaveholders are not always persons, but can also be organisations (mainly plantations, but also other) |
 | 11. | Slave voyages<sup>[1](#45-schemaorg),[2](#43-exploring-slave-trade-in-asia-esta),[3](#46-slavevoyages),[4](#48-required-specialised-classes)</sup>  | Ships are required to model slave voyages |
 | 12. | Social categories<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Scholars have collected extensive lists of data related to slavery, such as plantations in Suriname or an overview of all religions. These need to be shared durably |
