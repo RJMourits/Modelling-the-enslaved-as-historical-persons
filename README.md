@@ -55,7 +55,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 1. | [PiCo-M](#41-pico-m) | A basic descriptive model is necessary to describe observations and reconstructions of enslaved persons |
 | 2. | Age categories<sup>[1](#41-pico-m),[2](#42-enslavedorg)</sup> | It is not uncommon that person observations of enslaved persons only contain an age category (child vs adult) instead of an exact age  |
 | 3. | [Enumerations](#41-pico-m) | Certain sources contain (only) information about groups of enslaved persons as part of an enumeration |
-| 4. | [Name changes](#41-pico-m) | Emancipation and manumission records refer to one event, but these records contain two observations for the same (enslaved and free) person |
+| 4. | [Name changes](#41-pico-m) | Emancipation and manumission records refer to one event, but these records contain two observations for the same (enslaved and free) person with different characteristics |
 | 5. | [Observation or reconstruction](#41-pico-m) | The distinction between person observations and person reconstructions is not always clear with old data, as the preserved datasets are an undocumented mix of original and enriched data |
 | 6. | [Person names](#44-person-name-vocabulary) | Person names can contain African names, Christian names, and person descriptions |
 | 7. | [Person status](#42-enslavedorg) | There is no property to describe whether someone is enslaved or free |
@@ -72,9 +72,10 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 
 ## 4. Integration of existing schemas
 
-For each of these issues, we checked whether required properties and entities were available provided by the [Persons in Context model](https://personsincontext.org), [Enslaved.org](https://docs.enslaved.org/), [Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/), [Schema.org](https://schema.org), and [Wikidata](https://www.wikidata.org). Furthermore, we check the existing solutions for modelling slave voyages in tabular format by [Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) and [SlaveVoyages](https://www.slavevoyages.org/). For each of these solutions we evaluated the viability for reuse in and presented our outcomes in Q1 and Q2 2025.
+For each of these issues, we surveyed whether required properties and entities were available provided by the [Persons in Context model](https://personsincontext.org), [Enslaved.org](https://docs.enslaved.org/), [Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/), [Schema.org](https://schema.org), and [Wikidata](https://www.wikidata.org). Furthermore, we studied the existing solutions for modelling slave voyages in tabular format by [Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) and [SlaveVoyages](https://www.slavevoyages.org/). For each of these solutions we evaluated the viability for reuse in Q1 and Q2 2025.
 
 ### 4.1. PiCo-M
+The [Persons in Context model](https://personsincontext.org) can be used to model 
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
