@@ -100,10 +100,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.3. Exploring Slave Trade in Asia (ESTA)
+[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/). The data model is similar to [SlaveVoyages](https://www.slavevoyages.org/), but splits each voyage into multiple subvoyages.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
+| 11. | Slave voyages | The concepts that ESTA uses to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). However, the distinction between MainVoyages and SubVoyages is unique and should be included in the final  | **yes** <br> **SubVoyage** |
 
 
 ### 4.4. Person Name Vocabulary
@@ -111,7 +112,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with [_nameSpecification_](https://www.lodewijkpetram.nl/vocab/pnv/doc/#nameSpecification) | **yes** |
-| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model. (Update 2025/04/17: PNV is willing to extend if we provide them with a proposal for this property.) | **willing to extend** |
+| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model. (Update 2025/04/17: PNV is willing to extend if we provide them with a proposal for this property.) | **yes** |
 
 
 ### 4.5. Schema.org
