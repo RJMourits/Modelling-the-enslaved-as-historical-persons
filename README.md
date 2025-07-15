@@ -112,7 +112,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with [_nameSpecification_](https://www.lodewijkpetram.nl/vocab/pnv/doc/#nameSpecification) | **yes** |
-| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We will use examples to ask pnv for an extension of the model. (Update 2025/04/17: PNV is willing to extend if we provide them with a proposal for this property.) | **yes** |
+| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We asked pnv for an extension of the model. | **yes** |
 
 
 ### 4.5. Schema.org
@@ -120,7 +120,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), [_member_](https://schema.org/member). These properties can be made reflexive with [_affiliation_](https://schema.org/affiliation) | **yes** |
-| 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) 
+| 11. | Slave voyages | Voyages can be modelled using [sdo:TransferAction](https://schema.org/TransferAction). The concept is awkwardly named, but contains the relevant properties like [sdo:fromLocation](https://schema.org/fromLocation), [sdo:toLocation](https://schema.org/toLocation), [sdo:startTime](https://schema.org/startTime), and [sdo:endTime](https://schema.org/endTime) to describe the voyage as well as [sdo:object](https://schema.org/object) and [sdo:agent](https://schema.org/agent) to describe the vessel and captain. | **yes** |
 
 
 ### 4.6. SlaveVoyages
