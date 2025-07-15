@@ -104,10 +104,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | The concepts that ESTA uses to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). The relation between SubVoyages and the MainVoyages can be modelled via owl:subClassOf | **yes** |
+| 11. | Slave voyages | Modelling voyages is the bread and butter of SlaveVoyages and ESTA. However, ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage, which can be modelled via owl:subClassOf | **yes** |
 
 
 ### 4.4. Person Name Vocabulary
+[Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/) has the required properties to model the required extra information on names. 
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
@@ -116,6 +117,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.5. Schema.org
+[Schema.org](https://schema.org) has the concepts [_Organization_](https://schema.org/Organization) and [sdo:TransferAction](https://schema.org/TransferAction) that can be used to describe non-private owners and slave voyages. 
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
@@ -124,37 +126,40 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.6. SlaveVoyages
+[SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved. The data model is similar to [SlaveVoyages](https://www.slavevoyages.org/), but uses the concept SlaveVoyage, which is a much more fitting term to describe the slave transports.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **in contact** |
+| 11. | Slave voyages | Modelling voyages is the bread and butter of SlaveVoyages and ESTA. However, SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). SlaveVoyages names the TransferAction a SlaveVoyages, which is a much better term that should be adopted. | **yes** |
 
 
 ### 4.7. WikiData
+[Wikidata](https://wikidata.org) can be used to specify the types of organization that we encounter as enslavers. It enables data providers to describe the owner as detailed as they want, and provides them with an opportunity to add new types of owners if needed. However, WikiData is not suited to maintain curated lists, taxonomies, and thesauri.
+
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | WikiData can be used to specify the type of organization, and give a definiton of that organization. For example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
-| 13. | Taxonomies and Thesauri | Thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
+| 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
 
 
 ### 4.8. Required specialised classes
 |  | Issue | Description	  | class | 
 |--|-------|----------------|-------|
-| 11. | Slave voyages | Modelling ships is the bread and butter of SlaveVoyages.net and ESTA. We should aim for interoperability with their frameworks. This can easily be managed with [_sdo:TransferAction_](https://schema.org/TransferAction) | **MainVoyage** <br> **SubVoyage** |
+| 11. | Slave voyages | Although [_sdo:TransferAction_](https://schema.org/TransferAction) can be used to model slave voyage, but the term is too broad and insensitive. Therefore, we follow the example of SlaveVoyages and ESTA and use the concept SlaveVoyage to describe slave transports. | **SlaveVoyage** |
 
 
 ### 4.9. Required specialised properties
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
-| 9. | Relations |  | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
+| 9. | Relations | The properties isEnslavedBy and isEnslaverOf are used to describe the relations between enslavers and enslaved reflexively. Similarly, the properties isLegallyRepresentedBy and legallyRepresents are used to model legal representatives of enslaved (straatvoogden), owners (spouse in nomine uxoris), or specialized legal representatives. | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
 | 11. | Slave voyages |  | **slaveVoyage** |
-| 12. | Social categories |  | **hasSocialIdentity** |
+| 12. | Social categories | The categorization of enslaved people reaches far beyond their race and color and was also dependent on their religion, caste, and class. Therefore, we introduce the term hasSocialIdentity as a catch-all property for any social categorization | **hasSocialIdentity** |
 
 
 ### 4.10. Taxonomies and thesauri
 |  | Issue | Description	  | property | 
 |--|-------|----------------|----------|
-| 13. | Taxonomies and Thesauri | Person observations often contain social categories related to race, class, or religion |
+| 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. | - |
 
 <br>
 
