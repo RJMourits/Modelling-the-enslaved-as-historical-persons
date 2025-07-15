@@ -75,15 +75,15 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 For each of these issues, we surveyed whether required properties and entities were available provided by the [Persons in Context model](https://personsincontext.org), [Enslaved.org](https://docs.enslaved.org/), [Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/), [Schema.org](https://schema.org), and [Wikidata](https://www.wikidata.org). Furthermore, we studied the existing solutions for modelling slave voyages in tabular format by [Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) and [SlaveVoyages](https://www.slavevoyages.org/). For each of these solutions we evaluated the viability for reuse in Q1 and Q2 2025.
 
 ### 4.1. PiCo-M
-The [Persons in Context model](https://personsincontext.org) can be used to model 
+The logic of the [Persons in Context model](https://personsincontext.org) is easily applicable to data on enslaved persons. However, it req 
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons | **yes** |
 | 2. | Age categories | hasAge is used to mention ages. However, the user expects an exact age <br> _**We suggest not to use hasAge to refer to age categories**_ | **no** |
 | 3. | Enumerations | Each individual in the enumeration can be modelled as an enslaved with the PiCo or extended characteristics | **yes** |
-| 4. | Name changes | An emancipation or manumission record should be seen as two observations: one of an enslaved person until emancipation/manumission, and another of a free person from emancipation/manumission. These two observations can be joint with a personReconstruction. | **yes** |
-| 5. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allows for interpretation. <br> _**In case the relation to the source is lost, and records probably contain interpretation by the data provider, we suggest to use person reconstructions**_ | **yes** |
+| 4. | Name changes | An emancipation or manumission record should be seen as two observations: one of an enslaved person until emancipation/manumission, and another of a free person from emancipation/manumission. These two observations can be joint with owl:sameAs. | **yes** |
+| 5. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allows for interpretation. <br> _**In case the relation to the source is lost, and records probably contain interpretation by the data provider, we suggest to model the database as the source**_ | **yes** |
 
 
 ### 4.2. Enslaved.org
