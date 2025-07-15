@@ -104,7 +104,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | The concepts that ESTA uses to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). However, the distinction between MainVoyages and SubVoyages is unique and should be included in the final  | **yes** <br> **SubVoyage** |
+| 11. | Slave voyages | The concepts that ESTA uses to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). We model the distinction between a MainVoyage and SubVoyage via owl:subClassOf | **yes** |
 
 
 ### 4.4. Person Name Vocabulary
