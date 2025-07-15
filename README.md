@@ -72,7 +72,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 
 ## 4. Integration of existing schemas
 
-For each of these issues, we checked whether solutions were available in the Persons in Context model, Enslaved.org, Person Name Vocabulary, Schema.org, and SlaveVoyages.net. For each of these solutions we evaluated the viability for reuse in and presented our outcomes in Q1 and Q2 2025.
+For each of these issues, we checked whether required properties and entities were available provided by the [Persons in Context model](https://personsincontext.org), [Enslaved.org](https://docs.enslaved.org/), [Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/), [Schema.org](https://schema.org), and [Wikidata](https://www.wikidata.org). Furthermore, we check the existing solutions for modelling slave voyages in tabular format by [Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) and [SlaveVoyages](https://www.slavevoyages.org/). For each of these solutions we evaluated the viability for reuse in and presented our outcomes in Q1 and Q2 2025.
 
 ### 4.1. PiCo-M
 
