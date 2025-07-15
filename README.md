@@ -53,7 +53,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 |  | Issue | Description	  |
 |--|-------|----------------|
 | 1. | [PiCo-M](#41-pico-m) | A basic descriptive model is necessary to describe observations and reconstructions of enslaved persons |
-| 2. | Age categories<sup>[1](#41-pico-m),[2](#42-enslavedorg)</sup> | It is not uncommon that person observations of enslaved persons only contain an age category (child vs adult) rather than the exact age  |
+| 2. | Age categories<sup>[1](#41-pico-m),[2](#42-enslavedorg)</sup> | It is not uncommon that person observations of enslaved persons only contain an age category (child vs adult) instead of an exact age  |
 | 3. | [Enumerations](#41-pico-m) | Certain sources only information about groups rather than individuals. A structure is necessary to model the enslaved who are only observed as an enumeration |
 | 4. | [Name changes](#41-pico-m) | Emancipation and manumission records refer to one event, but contains two observations for the same (enslaved and free) person |
 | 5. | [Observation or reconstruction](#41-pico-m) | The distinction between person observations and person reconstructions is not always clear with old data, as the preserved datasets are an undocumented mix of original and enriched data without a link to the original source |
