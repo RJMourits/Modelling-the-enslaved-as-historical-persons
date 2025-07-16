@@ -173,7 +173,11 @@ Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we m
 
 
 ## 5.0. Vanilla PiCo model
-We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4. The example underneath contains the owner and the first two listed enslaved persons. The base PiCo model can describe that these persons are observed, what their name, sex, and date of birth is as well as state that the mother of Sans Souci is called Changoe. However, other important characteristics or relationships between person observations cannot be modelled.
+We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4. The example underneath contains the owner and the first two listed enslaved persons. The base PiCo model can describe: 
+- that these persons are observed,
+- their name, sex, and date of birth,
+- and that the mother of Sans Souci is called Changoe.
+However, other important characteristics or relationships between person observations cannot be modelled.
 
 ![Folio](Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
 | Subject | Property | Object |
