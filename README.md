@@ -164,7 +164,7 @@ Taxonomies and thesauri are not part of the extend PiCo model. However, data pro
 
 |  | Issue | Description	 | Entities | 
 |--|-------|----------------|----------|
-| 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. | - |
+| 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertains the long-term availability and stability of collections. | - |
 
 <br>
 
