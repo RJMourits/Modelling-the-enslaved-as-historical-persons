@@ -205,7 +205,7 @@ However, other important characteristics and relationships between person observ
 
 
 ### 5.1. Enslavement status
-We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which that persons 1 and 2 are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109) and the status of person 3, the mother of person 2, is Liminal. 
+We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which that persons 1 and 2 are [Enslaved](https://lod.enslaved.org/wiki/Q109) and the [Liminal](https://lod.enslaved.org/wiki/Q192) status of person 3, the mother of person 2. 
 
 | Subject | Property | Object |
 |----|----|----|
