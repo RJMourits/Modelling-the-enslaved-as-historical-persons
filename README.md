@@ -171,6 +171,10 @@ Taxonomies and thesauri are not part of the extend PiCo model. However, data pro
 ## 5. Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
+We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4
+
+![Folio]([Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg))
+
 
 ### 5.1. Enslavement status
 Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). 
