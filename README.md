@@ -145,24 +145,24 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 ### 4.8. Required specialised concepts
 The concept SlaveVoyage is introduced to specify [_sdo:TransferAction_](https://schema.org/TransferAction).
 
-|  | Issue | Description	 | concept | 
+|  | Issue | Description	 | Concept | 
 |--|-------|----------------|---------|
 | 11. | Slave voyages | Although [_sdo:TransferAction_](https://schema.org/TransferAction) can be used to model slave voyage, but the term is too broad and insensitive. Therefore, we follow the example of SlaveVoyages and ESTA and use the concept SlaveVoyage to describe slave transports. | **SlaveVoyage** |
 
 
 ### 4.9. Required specialised properties
-Two sets of reflexive properties are added to describe enslavement and legal representation. Furthermore, we introduce the term hasSocialIdentity to describe any type of social categorization.
+Two sets of reflexive are added to model enslavement and legal representation. Furthermore, we introduce the term hasSocialIdentity to describe any type of social categorization.
 
-|  | Issue | Description	  | property | 
+|  | Issue | Description	 | Property | 
 |--|-------|----------------|----------|
-| 9. | Relations | The properties isEnslavedBy and isEnslaverOf are used to describe the relations between enslavers and enslaved reflexively. Similarly, the properties isLegallyRepresentedBy and legallyRepresents are used to model legal representatives of enslaved (straatvoogden), owners (spouse in nomine uxoris), or specialized legal representatives. | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
+| 9. | Relations | The properties isEnslavedBy and isEnslaverOf are used to describe the relations between enslavers and enslaved. Similarly, the properties isLegallyRepresentedBy and legallyRepresents are used to model legal representatives of enslaved (straatvoogden), owners (spouse in nomine uxoris), or specialized legal representatives. | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
 | 12. | Social categories | The categorization of enslaved people reaches far beyond their race and color and was also dependent on their religion, caste, and class. Therefore, we introduce the term hasSocialIdentity as a catch-all property for any social categorization | **hasSocialIdentity** |
 
 
 ### 4.10. Taxonomies and thesauri
 Taxonomies and thesauri are not part of the extend PiCo model. However, data providers are free to use them, as long as they are part of curated collections.
 
-|  | Issue | Description	  | property | 
+|  | Issue | Description	 | Entities | 
 |--|-------|----------------|----------|
 | 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. | - |
 
