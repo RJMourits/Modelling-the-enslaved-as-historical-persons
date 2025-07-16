@@ -183,22 +183,22 @@ However, other important characteristics and relationships between person observ
 ![Folio](Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
 | Subject | Property | Object |
 |----|----|----|
-| hdsc:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; |
 | | [sdo:name](https://schema.org/name) | "Ferdinand" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear . |
-| hdsc:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:parent](https://schema.org/parent) | **hdsc:person3** ; |
+| example:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:parent](https://schema.org/parent) | **example:person3** ; |
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear . |
-| hdsc:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:child](https://schema.org/parent) | **hdsc:person2** ; |
+| example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:child](https://schema.org/child) | **example:person2** ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; |
 | | [sdo:name](https://schema.org/name) | "Changoe" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Changoe" . |
-| hdsc:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
@@ -209,44 +209,62 @@ We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslav
 
 | Subject | Property | Object |
 |----|----|----|
-| hdsc:enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; |
 | | [sdo:name](https://schema.org/name) | "Ferdinand" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
-| hdsc:enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:parent](https://schema.org/parent) | **hdsc:mother2** ; |
+| example:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:parent](https://schema.org/parent) | **example:person3** ; |
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
-| hdsc:mother2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:child](https://schema.org/parent) | **hdsc:enslaved2** ; |
+| example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:child](https://schema.org/child) | **example:person2** ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; |
 | | [sdo:name](https://schema.org/name) | "Changoe" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Changoe" ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q192) . |
-| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
 
 ### 5.2. Relation enslaved - enslaver
-We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. In its simplest form, this would result in the following triples.
+We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. 
 
 | Subject | Property | Object |
 |----|----|----|
-| hdsc:Enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | XXX:isEnslavedBy | example:person4 |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; |
+| | [sdo:name](https://schema.org/name) | "Ferdinand" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
+| example:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:parent](https://schema.org/parent) | **example:person3** ; |
+| | XXX:isEnslavedBy | example:person4 |
+| | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
-| | XXX:isEnslavedBy | hdsc:Owner1 . |
-| hdsc:Enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
-| | XXX:isEnslavedBy | hdsc:Owner1 . |
-| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | XXX:isEnslaverOf | hdsc:Enslaved1, hdsc:Enslaved2 . |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
+| example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:child](https://schema.org/child) | **example:person2** ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; |
+| | [sdo:name](https://schema.org/name) | "Changoe" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Changoe" ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q192) . |
+| example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | XXX:isEnslaverOf | example:person1, example:person2 |
+| | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
+| | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
 However, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
 
