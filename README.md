@@ -94,7 +94,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 | 2. | Age categories | [_hasAgeCategory_](https://lod.enslaved.org/wiki/Property:P4) is used to model age groups. This property has four categories: [_Infant Age Group_](https://lod.enslaved.org/wiki/Q426), [_Child Age Group_](https://lod.enslaved.org/wiki/Q427), [_Adult Age Group_](https://lod.enslaved.org/wiki/Q425), and [_Older Person Age Group_](https://lod.enslaved.org/wiki/Q429) |  **yes** | 
 | 7. | Person status | [_hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) is used to model person status. This property has seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192). This category is too specific to be broadly used, and too broad to be used specifically. <br> _**We suggest to use the property and three concepts: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192)**_ | **yes** |
 | 8. | Reasons for observations | [_hasEventType_](https://lod.enslaved.org/wiki/Property:P30) contains 27 events: [_Advertisement_](https://lod.enslaved.org/wiki/Q907443), [_Appraisal_](https://lod.enslaved.org/wiki/Q647904), [_Baptism or Naming Ceremony_](https://lod.enslaved.org/wiki/Q149), [_Birth_](https://lod.enslaved.org/wiki/Q147), _Burial or Interment_, [_Death_](https://lod.enslaved.org/wiki/Q148), [_Disappearance_](https://lod.enslaved.org/wiki/Q154), [_Disembarkation_](https://lod.enslaved.org/wiki/Q10088), _Education_, [_Emancipation or Manumission_](https://lod.enslaved.org/wiki/Q281), [_Embarkation_](https://lod.enslaved.org/wiki/Q10087), [_Employment, Apprenticeship, or Indenture_](https://lod.enslaved.org/wiki/Q156), [_Enslavement_](https://lod.enslaved.org/wiki/Q151), [_Legal Proceeding_](https://lod.enslaved.org/wiki/Q155), [_Marriage_](https://lod.enslaved.org/wiki/Q150), [_Membership_](https://lod.enslaved.org/wiki/Q473), [_Mention_](https://lod.enslaved.org/wiki/Q856060), [_Military Service_](https://lod.enslaved.org/wiki/Q164), [_Mortgage_](https://lod.enslaved.org/wiki/Q298746), [_Narrative_](https://lod.enslaved.org/wiki/Q157), [_Resistance or Rebellion_](https://lod.enslaved.org/wiki/Q357), [_Registration_](https://lod.enslaved.org/wiki/Q250), [_Relocation_](https://lod.enslaved.org/wiki/Q161), [_Residence_](https://lod.enslaved.org/wiki/Q159), [_Sale or Transfer_](https://lod.enslaved.org/wiki/Q153), [_Trade_](https://lod.enslaved.org/wiki/Q1147583), [_Voyage_](https://lod.enslaved.org/wiki/Q146). These events can be used to indicate to indicate why observation started and ended | **yes** |
-| 9. | Relations | Relations are modelled as a concept with InterAgentRelationshipRecord that require additional triples to describe the characteristics of the relationship. This approach is incongruent with the PiCo model that uses properties to directly relate two people. | **no** |
+| 9. | Relations | Relations are modelled as a concept with [_InterAgent Relationship_](https://lod.enslaved.org/wiki/Q463) that requires [additional triples](https://lod.enslaved.org/wiki/Property:P39) to describe the characteristics of the relationship. This approach is incongruent with the PiCo model that uses properties to directly relate two people. | **no** |
 | 12. | Social Categories | [_hasRaceorColor_](https://lod.enslaved.org/wiki/Property:P32) is used to model racial characteristics. This narrow focus is problematic as categorisation/description of enslaved in Africa and the Indian Ocean world is often also based on religion, caste, class, etc. | **no** |
 | 15. | Type of enslavement | [_hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) can be used to model the type of enslavement. However, the seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192) are too specific to be broadly used, and too broad to be used specifically. <br> _**We suggest to use the property and three concepts: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192)**_ | **yes** |
 
@@ -171,24 +171,68 @@ Taxonomies and thesauri are not part of the extend PiCo model. However, data pro
 ## 5. Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
-We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4
+
+## 5.0. Vanilla PiCo model
+We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4. The example underneath contains the owner and the first two listed enslaved persons. The base PiCo model can describe that these persons are observed, what their name, sex, and date of birth is as well as state that the mother of Sans Souci is called Changoe. However, other important characteristics or relationships between person observations cannot be modelled.
 
 ![Folio](Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
+| Subject | Property | Object |
+|----|----|----|
+| hdsc:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; |
+| | [sdo:name](https://schema.org/name) | "Ferdinand" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear . |
+| hdsc:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:parent](https://schema.org/parent) | **hdsc:person3** ; |
+| | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear . |
+| hdsc:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:child](https://schema.org/parent) | **hdsc:person2** ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; |
+| | [sdo:name](https://schema.org/name) | "Changoe" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Changoe" . |
+| hdsc:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
+| | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
 
 ### 5.1. Enslavement status
-Both enslaved and free persons can be modelled as picom:PersonObservations. We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which persons are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109). 
+We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which that persons 1 and 2 are Enslaved [ed:Q109](https://lod.enslaved.org/wiki/Q109) and the status of person 3, the mother of person 2, is Liminal. 
 
-| Object | Property | Object |
+| Subject | Property | Object |
 |----|----|----|
 | hdsc:enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; |
+| | [sdo:name](https://schema.org/name) | "Ferdinand" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
+| hdsc:enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:parent](https://schema.org/parent) | **hdsc:mother2** ; |
+| | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
+| hdsc:mother2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:child](https://schema.org/parent) | **hdsc:enslaved2** ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; |
+| | [sdo:name](https://schema.org/name) | "Changoe" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "Changoe" ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q192) . |
+| hdsc:owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; |
+| | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
+| | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
 
 ### 5.2. Relation enslaved - enslaver
 We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. In its simplest form, this would result in the following triples.
 
-| Object | Property | Object |
+| Subject | Property | Object |
 |----|----|----|
 | hdsc:Enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
