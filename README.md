@@ -130,7 +130,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | Modelling voyages is the bread and butter of SlaveVoyages and ESTA. However, SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). SlaveVoyages names the TransferAction a SlaveVoyages, which is a much better term that should be adopted. | **yes** |
+| 11. | Slave voyages | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). SlaveVoyages names the TransferAction a SlaveVoyages, which is a much better term that should be adopted. | **yes** |
 
 
 ### 4.7. WikiData
