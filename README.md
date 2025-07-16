@@ -100,11 +100,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.3. Exploring Slave Trade in Asia (ESTA)
-[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/). The data model is similar to [SlaveVoyages](https://www.slavevoyages.org/), but splits each voyage into multiple subvoyages.
+[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/) with a data model that is similar to [SlaveVoyages](https://www.slavevoyages.org/). However, ESTA operationalizes concept of SlaveVoyage a bit different than the other two parties.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | Modelling voyages is the bread and butter of SlaveVoyages and ESTA. However, ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage, which can be modelled via owl:subClassOf | **yes** |
+| 11. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage. The relationship between a MainVoyage and  can be modelled via owl:subClassOf | **yes** |
 
 
 ### 4.4. Person Name Vocabulary
@@ -126,7 +126,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.6. SlaveVoyages
-[SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved. The data model is similar to [SlaveVoyages](https://www.slavevoyages.org/), but uses the concept SlaveVoyage, which is a much more fitting term to describe the slave transports.
+[SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved with a data model similar to [SlaveVoyages](https://www.slavevoyages.org/). However, SlaveVoyages uses the concept SlaveVoyage, which is a much more fitting term to describe the slave transports.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
