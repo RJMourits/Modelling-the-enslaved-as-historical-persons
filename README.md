@@ -87,7 +87,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.2. Enslaved.org
-[Enslaved.org](https://docs.enslaved.org/) contains multiple useful properties to model properties and entities unique to enslavement. However, not all required properties and entities are modelled by Enslaved.org and relations cannot be reused.
+[Enslaved.org](https://docs.enslaved.org/) contains multiple properties and entities on enslavement and its context. However, not all required properties and entities are modelled by Enslaved.org and relations cannot be reused.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
