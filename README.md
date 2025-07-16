@@ -177,6 +177,7 @@ We use a folio from the Surinamese slave registers to describe the extensions to
 - that these persons are observed,
 - their name, sex, and date of birth,
 - and that the mother of Sans Souci is called Changoe.
+
 However, other important characteristics or relationships between person observations cannot be modelled.
 
 ![Folio](Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
