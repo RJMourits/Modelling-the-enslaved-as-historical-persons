@@ -108,7 +108,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.4. Person Name Vocabulary
-[Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/) has the required properties to model the required extra information on names. 
+[Person Name Vocabulary](https://www.lodewijkpetram.nl/vocab/pnv/doc/) has the required properties to model extra information on names. 
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
