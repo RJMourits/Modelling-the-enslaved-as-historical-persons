@@ -173,7 +173,7 @@ Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we m
 
 We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4
 
-![Folio]([Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
+![Folio](Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
 
 
 ### 5.1. Enslavement status
