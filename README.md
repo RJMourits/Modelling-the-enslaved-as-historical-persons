@@ -19,12 +19,13 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
 5. [Exentensions of the PiCo model](#5-exentensions-of-the-PiCo-model)
    - [5.1. Enslavement status](#51-enslavement-status)
    - [5.2. Relation enslaved - enslaver](#52-relation-enslaved---enslaver)
-   - [5.3. Relation enslaved - legal representative](#53-relation-enslaved---legal-representative)
-   - [5.4. Relation owner - legal representative](#54-relation-owner---legal-representative)
-   - [5.5. Plantations (and other organisations)](#55-plantations-and-other-organisations)
-   - [5.6. Slave voyages](#56-slave-voyages)
-   - [5.7. Group observations](#57-group-observations)
-   - [5.8. Manumission](#58-manumission)
+   - [5.3. Reason for observation](#53-reason-for-observation)
+   - [5.4. Relation enslaved - legal representative](#54-relation-enslaved---legal-representative)
+   - [5.5. Relation owner - legal representative](#55-relation-owner---legal-representative)
+   - [5.6. Plantations (and other organisations)](#56-plantations-and-other-organisations)
+   - [5.7. Slave voyages](#57-slave-voyages)
+   - [5.8. Group observations](#58-group-observations)
+   - [5.9. Manumission](#59-manumission)
 
 <br>
 
@@ -308,6 +309,9 @@ Moreover, we advise to also add the beginning and end date of the observed ensla
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
 
+
+### 5.3. Reason for observation
+
 We also describe the start and end date of person observations using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate). These receive the Enslaved.org property for [hasEventType](https://lod.enslaved.org/wiki/Property:P30) and any of the associated concepts as a blank node: [_Advertisement_](https://lod.enslaved.org/wiki/Q907443), [_Appraisal_](https://lod.enslaved.org/wiki/Q647904), [_Baptism or Naming Ceremony_](https://lod.enslaved.org/wiki/Q149), [_Birth_](https://lod.enslaved.org/wiki/Q147), _Burial or Interment_, [_Death_](https://lod.enslaved.org/wiki/Q148), [_Disappearance_](https://lod.enslaved.org/wiki/Q154), [_Disembarkation_](https://lod.enslaved.org/wiki/Q10088), _Education_, [_Emancipation or Manumission_](https://lod.enslaved.org/wiki/Q281), [_Embarkation_](https://lod.enslaved.org/wiki/Q10087), [_Employment, Apprenticeship, or Indenture_](https://lod.enslaved.org/wiki/Q156), [_Enslavement_](https://lod.enslaved.org/wiki/Q151), [_Legal Proceeding_](https://lod.enslaved.org/wiki/Q155), [_Marriage_](https://lod.enslaved.org/wiki/Q150), [_Membership_](https://lod.enslaved.org/wiki/Q473), [_Mention_](https://lod.enslaved.org/wiki/Q856060), [_Military Service_](https://lod.enslaved.org/wiki/Q164), [_Mortgage_](https://lod.enslaved.org/wiki/Q298746), [_Narrative_](https://lod.enslaved.org/wiki/Q157), [_Resistance or Rebellion_](https://lod.enslaved.org/wiki/Q357), [_Registration_](https://lod.enslaved.org/wiki/Q250), [_Relocation_](https://lod.enslaved.org/wiki/Q161), [_Residence_](https://lod.enslaved.org/wiki/Q159), [_Sale or Transfer_](https://lod.enslaved.org/wiki/Q153), [_Trade_](https://lod.enslaved.org/wiki/Q1147583), [_Voyage_](https://lod.enslaved.org/wiki/Q146).
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
@@ -361,7 +365,7 @@ We also describe the start and end date of person observations using [sdo:startD
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
 
   
-### 5.3. Relation enslaved - legal representative
+### 5.4. Relation enslaved - legal representative
 Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -389,7 +393,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | ] . | | |
 
 
-### 5.4. Relation owner - legal representative
+### 5.5. Relation owner - legal representative
 Owners are sometimes represented by an intermediary or by their spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -430,8 +434,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | ] . | | |
 
 
-
-### 5.5. Plantations (and other organisations)
+### 5.6. Plantations (and other organisations)
 
 | Object | Property | Object |
 |----|----|----|
@@ -456,7 +459,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | hdsc:isEnslavedBy | hdsc:Organization1 . |
 
 
-### 5.6. Slave voyages
+### 5.7. Slave voyages
 | Object | Property | Object |
 |----|----|----|
 | esta:Voyage1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | XXX:MainVoyage, [sdo:TransferAction](https://schema.org/TransferAction) . |
@@ -468,11 +471,9 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | [sdo:toLocation](sdo:toLocation) | "Antananarivo" . |
 
 
+### 5.8. Manumission
 
 
-### 5.7. Manumission
-
-
-### 5.8. Group observations
+### 5.9. Group observations
 
 
