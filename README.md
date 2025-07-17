@@ -100,7 +100,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.3. Exploring Slave Trade in Asia (ESTA)
-[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/) with a data model that is similar to [SlaveVoyages](https://www.slavevoyages.org/) and [sdo:TravelAction](https://schema.org/TravelAction). However, ESTA operationalizes concept of SlaveVoyage a bit different than the other two parties.
+[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/) with a data model that is similar to [SlaveVoyages](https://www.slavevoyages.org/) and [sdo:TravelAction](https://schema.org/TravelAction). However, ESTA operationalizes transports a bit different than the other two parties.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
