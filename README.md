@@ -493,6 +493,9 @@ Enslaved and manumitted persons can receive a _straatvoogd_ who represents them 
 ### 5.10. Group observations
 
 ![naam1](Images/NL-HaNA_1.04.17_533.txt&scan=0052-tediversegroep.png)
+
 ![naam2](Images/NL-HaNA_1.04.17_534.txt&scan=0049-deel1.png)
+
 ![naam3](Images/NL-HaNA_1.04.17_534.txt&scan=0049-deel2.png)
+
 ![naam4](Images/NL-HaNA_1.04.18.03_11952.txt&scan=0113-namenonbekend.png)
