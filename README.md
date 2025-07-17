@@ -17,15 +17,16 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
    - [4.9. Required specialised properties](#49-required-specialised-properties)
    - [4.10. Taxonomies and thesauri](#410-taxonomies-and-thesauri)
 5. [Exentensions of the PiCo model](#5-exentensions-of-the-PiCo-model)
-   - [5.1. Enslavement status](#51-enslavement-status)
-   - [5.2. Relation enslaved - enslaver](#52-relation-enslaved---enslaver)
-   - [5.3. Reason for observation](#53-reason-for-observation)
-   - [5.4. Relation enslaved - legal representative](#54-relation-enslaved---legal-representative)
-   - [5.5. Relation owner - legal representative](#55-relation-owner---legal-representative)
-   - [5.6. Plantations (and other organisations)](#56-plantations-and-other-organisations)
-   - [5.7. Slave voyages](#57-slave-voyages)
-   - [5.8. Group observations](#58-group-observations)
-   - [5.9. Manumission](#59-manumission)
+   - [5.1. Vanilla PiCo model](#51-vanilla-pico-model)
+   - [5.2. Enslavement status](#52-enslavement-status)
+   - [5.3. Relation enslaved - enslaver](#53-relation-enslaved---enslaver)
+   - [5.4. Reason for observation](#54-reason-for-observation)
+   - [5.5. Relation enslaved - legal representative](#55-relation-enslaved---legal-representative)
+   - [5.6. Relation owner - legal representative](#56-relation-owner---legal-representative)
+   - [5.7. Plantations (and other organisations)](#57-plantations-and-other-organisations)
+   - [5.8. Slave voyages](#58-slave-voyages)
+   - [5.9. Group observations](#59-group-observations)
+   - [5.10. Manumission](#510-manumission)
 
 <br>
 
@@ -174,8 +175,10 @@ Taxonomies and thesauri are not part of the extend PiCo model. However, data pro
 ## 5. Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
+<br>
 
-## 5.0. Vanilla PiCo model
+
+## 5.1. Vanilla PiCo model
 We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4. The example underneath contains the owner and the first two listed enslaved persons. The base PiCo model can describe: 
 - that these persons are observed,
 - their name, sex, and date of birth,
@@ -206,8 +209,10 @@ However, other important characteristics and relationships between person observ
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
+<br>
 
-### 5.1. Enslavement status
+
+### 5.2. Enslavement status
 We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslaved.org/wiki/Property:P33) to note which that persons 1 and 2 are [Enslaved](https://lod.enslaved.org/wiki/Q109) and the [Liminal](https://lod.enslaved.org/wiki/Q192) status of person 3, the mother of person 2. 
 
 | Subject | Property | Object |
@@ -236,8 +241,10 @@ We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslav
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
+<br>
 
-### 5.2. Relation enslaved - enslaver
+
+### 5.3. Relation enslaved - enslaver
 We use the properties isEnslavedBy and isEnslaverOf to model the relationship between enslaver and enslaved. 
 
 | Subject | Property | Object |
@@ -309,8 +316,10 @@ Moreover, we advise to also add the beginning and end date of the observed ensla
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
 
+<br>
 
-### 5.3. Reason for observation
+
+### 5.4. Reason for observation
 
 We also describe the start and end date of person observations using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate). These receive the Enslaved.org property for [hasEventType](https://lod.enslaved.org/wiki/Property:P30) and any of the associated concepts as a blank node: [_Advertisement_](https://lod.enslaved.org/wiki/Q907443), [_Appraisal_](https://lod.enslaved.org/wiki/Q647904), [_Baptism or Naming Ceremony_](https://lod.enslaved.org/wiki/Q149), [_Birth_](https://lod.enslaved.org/wiki/Q147), _Burial or Interment_, [_Death_](https://lod.enslaved.org/wiki/Q148), [_Disappearance_](https://lod.enslaved.org/wiki/Q154), [_Disembarkation_](https://lod.enslaved.org/wiki/Q10088), _Education_, [_Emancipation or Manumission_](https://lod.enslaved.org/wiki/Q281), [_Embarkation_](https://lod.enslaved.org/wiki/Q10087), [_Employment, Apprenticeship, or Indenture_](https://lod.enslaved.org/wiki/Q156), [_Enslavement_](https://lod.enslaved.org/wiki/Q151), [_Legal Proceeding_](https://lod.enslaved.org/wiki/Q155), [_Marriage_](https://lod.enslaved.org/wiki/Q150), [_Membership_](https://lod.enslaved.org/wiki/Q473), [_Mention_](https://lod.enslaved.org/wiki/Q856060), [_Military Service_](https://lod.enslaved.org/wiki/Q164), [_Mortgage_](https://lod.enslaved.org/wiki/Q298746), [_Narrative_](https://lod.enslaved.org/wiki/Q157), [_Resistance or Rebellion_](https://lod.enslaved.org/wiki/Q357), [_Registration_](https://lod.enslaved.org/wiki/Q250), [_Relocation_](https://lod.enslaved.org/wiki/Q161), [_Residence_](https://lod.enslaved.org/wiki/Q159), [_Sale or Transfer_](https://lod.enslaved.org/wiki/Q153), [_Trade_](https://lod.enslaved.org/wiki/Q1147583), [_Voyage_](https://lod.enslaved.org/wiki/Q146).
 
@@ -364,8 +373,10 @@ We also describe the start and end date of person observations using [sdo:startD
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
 
+<br>
+
   
-### 5.4. Relation enslaved - legal representative
+### 5.5. Relation enslaved - legal representative
 Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -392,8 +403,10 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
 
+<br>
 
-### 5.5. Relation owner - legal representative
+
+### 5.6. Relation owner - legal representative
 Owners are sometimes represented by an intermediary or by their spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -433,8 +446,10 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
 
+<br>
 
-### 5.6. Plantations (and other organisations)
+
+### 5.7. Plantations (and other organisations)
 
 | Object | Property | Object |
 |----|----|----|
@@ -458,8 +473,10 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | hdsc:isEnslavedBy | hdsc:Organization1 . |
 
+<br>
 
-### 5.7. Slave voyages
+
+### 5.8. Slave voyages
 | Object | Property | Object |
 |----|----|----|
 | esta:Voyage1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | XXX:MainVoyage, [sdo:TransferAction](https://schema.org/TransferAction) . |
@@ -470,10 +487,12 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | [sdo:endDate](sdo:endDate) | "1824-07-11"^^xsd:date ; |
 | | [sdo:toLocation](sdo:toLocation) | "Antananarivo" . |
 
+<br>
 
-### 5.8. Manumission
+
+### 5.9. Manumission
 
 
-### 5.9. Group observations
+### 5.10. Group observations
 
 
