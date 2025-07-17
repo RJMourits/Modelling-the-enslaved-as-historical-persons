@@ -381,6 +381,8 @@ Owners are sometimes represented by an intermediary or by their spouse, like in 
 
 We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
 
+| Subject | Property | Object | Property Blank Node | Object Blank Node |
+|----|----|----|----|----|
 | example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
