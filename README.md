@@ -24,7 +24,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
    - [5.5. Relation owner - legal representative](#55-relation-owner---legal-representative)
    - [5.6. Relation enslaved - legal representative](#56-relation-enslaved---legal-representative)
    - [5.7. Plantations (and other organisations)](#57-plantations-and-other-organisations)
-   - [5.8. Slave voyages](#58-slave-voyages)
+   - [5.8. Transports](#58-transports)
    - [5.9. Group observations](#59-group-observations)
    - [5.10. Manumission](#510-manumission)
 
@@ -410,31 +410,36 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 
 ### 5.6. Relation enslaved - legal representative
-Enslaved and manumitted persons can receive a _straatvoogd_ who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy. For example, in the 
-
-| Object | Property | Object |
-|----|----|----|
-| hdsc:Freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; |
-| | XXX:legallyRepresentedBy | hdsc:Intermediary1 . |
-| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | XXX:legallyRepresents | hdsc:Freedperson1 . |
-
-We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
+Enslaved and manumitted persons can receive a _straatvoogd_ who represents them in the years after slavery. For example, the freed people in the example folio underneath. We model this relation for the first two persons in the example with the properties legallyRepresents and legallyRepresentedBy. We add the beginning date using sdo:startDate, as legal representation can change over time.
 
 | Object | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:Freedperson1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; | | |
-| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Intermediary1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
-| | | ] . | | |
-| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Freedperson1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
-| | | ] . | | |
+| example:person6 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person8** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | "1840-7-20"^^xsd:date ; |
+| | | ] ; | | |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
+| | [sdo:name](https://schema.org/name) | "George" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "George" ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
+| example:person7 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person8** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | "1840-7-20"^^xsd:date ; |
+| | | ] ; | | |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Female) ; | | |
+| | [sdo:name](https://schema.org/name) | "Leentje" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Leentje" ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
+| example:person8 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person6** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | "1840-7-20"^^xsd:date ; |
+| | | ] ; | | |
+| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person7** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | "1840-7-20"^^xsd:date ; |
+| | | ] ; | | |
+| | [sdo:name](https://schema.org/name) | "D.J. Loth" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "D.J." ; | | |
+| | [sdo:givenName](https://schema.org/familyName) | "Loth" . | | |
 
 ![straatvoogd](Images/Slavenregister_InvNr_10_FolioNr_1920a-klein.jpg)
 
@@ -465,10 +470,10 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | hdsc:isEnslavedBy | hdsc:Organization1 . |
 
-<br>
+<br>!
 
 
-### 5.8. Slave voyages
+### 5.8. Transports
 | Object | Property | Object |
 |----|----|----|
 | esta:Voyage1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | XXX:MainVoyage, [sdo:TransferAction](https://schema.org/TransferAction) . |
@@ -487,4 +492,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 
 ### 5.10. Group observations
 
-
+![naam1](Images/NL-HaNA_1.04.17_533.txt&scan=0052-tediversegroep.png)
+![naam2](Images/NL-HaNA_1.04.17_534.txt&scan=0049-deel1.png)
+![naam3](Images/NL-HaNA_1.04.17_534.txt&scan=0049-deel2.png)
+![naam4](Images/NL-HaNA_1.04.18.03_11952.txt&scan=0113-namenonbekend.png)
