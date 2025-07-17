@@ -404,13 +404,13 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
-| | [picom:deceased](https://personsincontext.org/model#deceased) | FALSE . | | |
+| | [picom:deceased](https://personsincontext.org/model#deceased) | "false"^^xsd:boolean . | | |
 
 <br>
 
 
 ### 5.6. Relation enslaved - legal representative
-Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy.
+Enslaved and manumitted persons can receive a _straatvoogd_ who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy. For example, in the 
 
 | Object | Property | Object |
 |----|----|----|
@@ -435,6 +435,8 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
+
+![straatvoogd](Images/Slavenregister_InvNr_10_FolioNr_1920a-klein.jpg)
 
 <br>
 
