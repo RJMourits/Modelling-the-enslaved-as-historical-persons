@@ -242,7 +242,7 @@ We use the properties isEnslavedBy and isEnslaverOf to model the relationship be
 | Subject | Property | Object |
 |----|----|----|
 | example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | XXX:isEnslavedBy | example:person4 |
+| | XXX:isEnslavedBy | **example:person4** |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; |
 | | [sdo:name](https://schema.org/name) | "Ferdinand" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; |
@@ -250,7 +250,7 @@ We use the properties isEnslavedBy and isEnslaverOf to model the relationship be
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
 | example:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:parent](https://schema.org/parent) | **example:person3** ; |
-| | XXX:isEnslavedBy | example:person4 |
+| | XXX:isEnslavedBy | **example:person4** |
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
@@ -263,53 +263,102 @@ We use the properties isEnslavedBy and isEnslaverOf to model the relationship be
 | | [sdo:givenName](https://schema.org/givenName) | "Changoe" ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q192) . |
 | example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | XXX:isEnslaverOf | example:person1, example:person2 |
+| | XXX:isEnslaverOf | **example:person1**, <br> **example:person2** |
 | | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
-However, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
+Moreover, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:Enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
+| | [sdo:name](https://schema.org/name) | "Ferdinand" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; | | |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
+| example:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | [sdo:parent](https://schema.org/parent) | **example:person3** ; | | |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:name](https://schema.org/name) | "Sans Souci" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; | | |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
-| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
-| | | ] . | | |
-| hdsc:Enslaved2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
-| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-16"^^xsd:date ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
-| | | ] . | | |
-| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Enslaved1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
-| | | ] ; | | |
-| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Enslaved2 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-16"^^xsd:date ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
-| | | ] . | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
+| example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | [sdo:child](https://schema.org/child) | **example:person2** ; | | |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; | | |
+| | [sdo:name](https://schema.org/name) | "Changoe" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Changoe" ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q192) . | | |
+| example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person2** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
+| | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
 
 We also describe the start and end date of person observations using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate). These receive the Enslaved.org property for [hasEventType](https://lod.enslaved.org/wiki/Property:P30) and any of the associated concepts as a blank node: [_Advertisement_](https://lod.enslaved.org/wiki/Q907443), [_Appraisal_](https://lod.enslaved.org/wiki/Q647904), [_Baptism or Naming Ceremony_](https://lod.enslaved.org/wiki/Q149), [_Birth_](https://lod.enslaved.org/wiki/Q147), _Burial or Interment_, [_Death_](https://lod.enslaved.org/wiki/Q148), [_Disappearance_](https://lod.enslaved.org/wiki/Q154), [_Disembarkation_](https://lod.enslaved.org/wiki/Q10088), _Education_, [_Emancipation or Manumission_](https://lod.enslaved.org/wiki/Q281), [_Embarkation_](https://lod.enslaved.org/wiki/Q10087), [_Employment, Apprenticeship, or Indenture_](https://lod.enslaved.org/wiki/Q156), [_Enslavement_](https://lod.enslaved.org/wiki/Q151), [_Legal Proceeding_](https://lod.enslaved.org/wiki/Q155), [_Marriage_](https://lod.enslaved.org/wiki/Q150), [_Membership_](https://lod.enslaved.org/wiki/Q473), [_Mention_](https://lod.enslaved.org/wiki/Q856060), [_Military Service_](https://lod.enslaved.org/wiki/Q164), [_Mortgage_](https://lod.enslaved.org/wiki/Q298746), [_Narrative_](https://lod.enslaved.org/wiki/Q157), [_Resistance or Rebellion_](https://lod.enslaved.org/wiki/Q357), [_Registration_](https://lod.enslaved.org/wiki/Q250), [_Relocation_](https://lod.enslaved.org/wiki/Q161), [_Residence_](https://lod.enslaved.org/wiki/Q159), [_Sale or Transfer_](https://lod.enslaved.org/wiki/Q153), [_Trade_](https://lod.enslaved.org/wiki/Q1147583), [_Voyage_](https://lod.enslaved.org/wiki/Q146).
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
-| hdsc:enslaved1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
-| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:owner1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1837-08-15"^^xsd:date ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1838"^^xsd:gYear ; |
-| | | ] ; | | |
+| example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
 | | [sdo:startDate](https://schema.org/startDate) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | "1837-08-15"^^xsd:date ; |
-| | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q153](https://lod.enslaved.org/wiki/Q153) |
+| | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q153](https://lod.enslaved.org/wiki/Q250) |
 | | | ] ; | | |
 | | [sdo:endDate](https://schema.org/endDate) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | "1838"^^xsd:gYear ; |
 | | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q250](https://lod.enslaved.org/wiki/Q153) |
 | | | ] . | | |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
+| | [sdo:name](https://schema.org/name) | "Ferdinand" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; | | |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1803"^^xsd:gYear ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
+| example:person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | [sdo:parent](https://schema.org/parent) | **example:person3** ; | | |
+| | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:startDate](https://schema.org/startDate) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | "1837-08-15"^^xsd:date ; |
+| | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q153](https://lod.enslaved.org/wiki/Q250) |
+| | | ] ; | | |
+| | [sdo:endDate](https://schema.org/endDate) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | "1838"^^xsd:gYear ; |
+| | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q250](https://lod.enslaved.org/wiki/Q153) |
+| | | ] . | | |
+| | [sdo:name](https://schema.org/name) | "Sans Souci" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; | | |
+| | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
+| example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | [sdo:child](https://schema.org/child) | **example:person2** ; | | |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; | | |
+| | [sdo:name](https://schema.org/name) | "Changoe" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "Changoe" ; | | |
+| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q192) . | | |
+| example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person2** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
+| | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
 
   
 ### 5.3. Relation enslaved - legal representative
