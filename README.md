@@ -1,6 +1,6 @@
 # Modelling the enslaved as historical persons
 
-Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde
+Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde, Liliana Melgar
 
 1. [Introduction](#1-introduction)
 2. [Specification](#2-specification)
@@ -100,11 +100,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.3. Exploring Slave Trade in Asia (ESTA)
-[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/) with a data model that is similar to [SlaveVoyages](https://www.slavevoyages.org/). However, ESTA operationalizes concept of SlaveVoyage a bit different than the other two parties.
+[Exploring Slave Trade in Asia (ESTA)](https://exploringslavetradeinasia.com/) models the same data as [SlaveVoyages](https://www.slavevoyages.org/) with a data model that is similar to [SlaveVoyages](https://www.slavevoyages.org/) and [sdo:TravelAction](https://schema.org/TravelAction). However, ESTA operationalizes concept of SlaveVoyage a bit different than the other two parties.
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage. The relationship between a MainVoyage and  can be modelled via owl:subClassOf | **yes** |
+| 11. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage. The relationship between a MainVoyage and SubVoyage can be modelled via rdfs:subClassOf | **no** |
 
 
 ### 4.4. Person Name Vocabulary
@@ -126,11 +126,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.6. SlaveVoyages
-[SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved with a data model similar to [SlaveVoyages](https://www.slavevoyages.org/). However, SlaveVoyages uses the concept SlaveVoyage, which is a much more fitting term to describe the slave transports.
+[SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved with a data model similar to [SlaveVoyages](https://www.slavevoyages.org/) and [sdo:TravelAction](https://schema.org/TravelAction). This makes it unnecessary to reuse entities or properties from [SlaveVoyages](https://www.slavevoyages.org/).
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). SlaveVoyages names the TransferAction a SlaveVoyages, which is a much better term that should be adopted. | **yes** |
+| 11. | Slave voyages | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction and thus harder to reuse in other conctexts. | **no** |
 
 
 ### 4.7. WikiData
