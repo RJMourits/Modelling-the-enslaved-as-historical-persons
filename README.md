@@ -21,8 +21,8 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
    - [5.2. Enslavement status](#52-enslavement-status)
    - [5.3. Relation enslaved - enslaver](#53-relation-enslaved---enslaver)
    - [5.4. Reason for observation](#54-reason-for-observation)
-   - [5.5. Relation enslaved - legal representative](#55-relation-enslaved---legal-representative)
-   - [5.6. Relation owner - legal representative](#56-relation-owner---legal-representative)
+   - [5.5. Relation owner - legal representative](#55-relation-owner---legal-representative)
+   - [5.6. Relation enslaved - legal representative](#56-relation-enslaved---legal-representative)
    - [5.7. Plantations (and other organisations)](#57-plantations-and-other-organisations)
    - [5.8. Slave voyages](#58-slave-voyages)
    - [5.9. Group observations](#59-group-observations)
@@ -376,7 +376,38 @@ We also describe the start and end date of person observations using [sdo:startD
 <br>
 
   
-### 5.5. Relation enslaved - legal representative
+### 5.5. Relation owner - legal representative
+Owners are sometimes represented by an intermediary or by their spouse, like in the example by the owner's spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy. 
+
+We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
+
+| example:person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person2** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:spouse](https://schema.org/spouse)| **example:person5** ; | | |
+| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person5** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; | | |
+| | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; | | |
+| | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
+| | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
+| example:person5 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
+| | [sdo:spouse](https://schema.org/spouse)| **example:person4** ; | | |
+| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
+| | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
+| | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
+| | [picom:deceased](https://personsincontext.org/model#deceased) | FALSE . | | |
+
+<br>
+
+
+### 5.6. Relation enslaved - legal representative
 Enslaved and manumitted persons can receive a <i>straatvoogd</i> who represents them in the years after slavery. This can by modelled with the properties legallyRepresents and legallyRepresentedBy.
 
 | Object | Property | Object |
@@ -399,49 +430,6 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | | ] . | | |
 | hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Freedperson1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
-| | | ] . | | |
-
-<br>
-
-
-### 5.6. Relation owner - legal representative
-Owners are sometimes represented by an intermediary or by their spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy.
-
-| Object | Property | Object |
-|----|----|----|
-| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) |
-| | [sdo:spouse](https://schema.org/spouse) | hdsc:Intermediary1 ; |
-| | XXX:legallyRepresentedBy | hdsc:Intermediary1 . |
-| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) |
-| | [sdo:spouse](https://schema.org/spouse) | hdsc:Owner1 ; |
-| | XXX:legallyRepresents | hdsc:Owner1 . |
-
-We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
-
-| Object | Property | Object | Property Blank Node | Object Blank Node |
-|----|----|----|----|----|
-| hdsc:Owner1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) | | |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q386](https://lod.enslaved.org/wiki/Q386) ; | | |
-| | [sdo:spouse](https://schema.org/spouse) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Intermediary1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
-| | | ] ; | | |
-| | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Intermediary1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
-| | | ] . | | |
-| hdsc:Intermediary1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
-| | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) | | |
-| | [sdo:spouse](https://schema.org/spouse) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
-| | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
-| | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
-| | | ] ; | | |
-| | XXX:legallyRepresents | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | hdsc:Owner1 ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | "1848"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1851"^^xsd:gYear ; |
 | | | ] . | | |
