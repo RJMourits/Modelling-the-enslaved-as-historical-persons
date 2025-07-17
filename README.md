@@ -11,7 +11,7 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
    - [4.3. Exploring Slave Trade in Asia (ESTA)](#43-exploring-slave-trade-in-asia-esta)
    - [4.4. Person Name Vocabulary](#44-person-name-vocabulary)
    - [4.5. Schema.org](#45-schemaorg)
-   - [4.6. SlaveVoyages](#46-slavevoyages)
+   - [4.6. Transports](#46-transports)
    - [4.7. WikiData](#47-WikiData)
    - [4.8. Required specialised concepts](#48-required-specialised-concepts)
    - [4.9. Required specialised properties](#49-required-specialised-properties)
@@ -62,9 +62,9 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 8. | [Reasons for observation](#42-enslavedorg) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
 | 9. | Relations<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | There are currently no properties to describe relationships between <br> - slaveholder and enslaved, <br> - freed persons and ["straatvoogden"](https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/suriname-vrijgelaten-slaven-manumissies-1832-1863), or <br> - slave owners and their legal representative. <br> The latter group includes women who are legally represented by their husband, also known as nomine uxoris |
 | 10. | Slaveholders<sup>[1](#45-schemaorg),[2](#47-wikidata)</sup> | Slaveholders can also be organisations. For example, a plantation or company |
-| 11. | Slave voyages<sup>[1](#45-schemaorg),[2](#43-exploring-slave-trade-in-asia-esta),[3](#46-slavevoyages)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
-| 12. | Social categories<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Most sources contain categorisations by race, class, or religion |
-| 13. | Taxonomies and Thesauri<sup>[1](#47-wikidata),[2](#410-taxonomies-and-thesauri)</sup> | Scholars have collected extensive lists of data related to slavery, such as an [overview of plantations in Suriname](https://hdl.handle.net/10622/4VOJYS) or an [overview of social groups in the archives of the Dutch East India Company](https://hdl.handle.net/10622/5LRS03) |
+| 11. | Social categories<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Most sources contain categorisations by race, class, or religion |
+| 12. | Taxonomies and Thesauri<sup>[1](#47-wikidata),[2](#410-taxonomies-and-thesauri)</sup> | Scholars have collected extensive lists of data related to slavery, such as an [overview of plantations in Suriname](https://hdl.handle.net/10622/4VOJYS) or an [overview of social groups in the archives of the Dutch East India Company](https://hdl.handle.net/10622/5LRS03) |
+| 13. | Transports<sup>[1](#45-schemaorg),[2](#43-exploring-slave-trade-in-asia-esta),[3](#46-slavevoyages)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
 | 14. | [Toponyms](#44-person-name-vocabulary) | Person names of enslaved can contain toponyms. The exact meaning of these toponyms is ambiguous, but the toponym are required to reconstruct persons |
 | 15. | [Type of enslavement](#42-enslavedorg) | There is no property to describe the type of enslavement |
 | 16. | [Unspecified groups](#48-required-specialised-classes) | Some sources contain only observations for groups of enslaved |
@@ -96,7 +96,8 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 | 7. | Person status | [_hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) is used to model person status. This property has seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192). This category is too specific to be broadly used, and too broad to be used specifically. <br> _**We suggest to use the property and three concepts: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192)**_ | **yes** |
 | 8. | Reasons for observations | [_hasEventType_](https://lod.enslaved.org/wiki/Property:P30) contains 27 events: [_Advertisement_](https://lod.enslaved.org/wiki/Q907443), [_Appraisal_](https://lod.enslaved.org/wiki/Q647904), [_Baptism or Naming Ceremony_](https://lod.enslaved.org/wiki/Q149), [_Birth_](https://lod.enslaved.org/wiki/Q147), _Burial or Interment_, [_Death_](https://lod.enslaved.org/wiki/Q148), [_Disappearance_](https://lod.enslaved.org/wiki/Q154), [_Disembarkation_](https://lod.enslaved.org/wiki/Q10088), _Education_, [_Emancipation or Manumission_](https://lod.enslaved.org/wiki/Q281), [_Embarkation_](https://lod.enslaved.org/wiki/Q10087), [_Employment, Apprenticeship, or Indenture_](https://lod.enslaved.org/wiki/Q156), [_Enslavement_](https://lod.enslaved.org/wiki/Q151), [_Legal Proceeding_](https://lod.enslaved.org/wiki/Q155), [_Marriage_](https://lod.enslaved.org/wiki/Q150), [_Membership_](https://lod.enslaved.org/wiki/Q473), [_Mention_](https://lod.enslaved.org/wiki/Q856060), [_Military Service_](https://lod.enslaved.org/wiki/Q164), [_Mortgage_](https://lod.enslaved.org/wiki/Q298746), [_Narrative_](https://lod.enslaved.org/wiki/Q157), [_Resistance or Rebellion_](https://lod.enslaved.org/wiki/Q357), [_Registration_](https://lod.enslaved.org/wiki/Q250), [_Relocation_](https://lod.enslaved.org/wiki/Q161), [_Residence_](https://lod.enslaved.org/wiki/Q159), [_Sale or Transfer_](https://lod.enslaved.org/wiki/Q153), [_Trade_](https://lod.enslaved.org/wiki/Q1147583), [_Voyage_](https://lod.enslaved.org/wiki/Q146). These events can be used to indicate to indicate why observation started and ended | **yes** |
 | 9. | Relations | Relations are modelled as a concept with [_InterAgent Relationship_](https://lod.enslaved.org/wiki/Q463) that requires [additional triples](https://lod.enslaved.org/wiki/Property:P39) to describe the characteristics of the relationship. This approach is incongruent with the PiCo model that uses properties to directly relate two people. | **no** |
-| 12. | Social Categories | [_hasRaceorColor_](https://lod.enslaved.org/wiki/Property:P32) is used to model racial characteristics. This narrow focus is problematic as categorisation/description of enslaved in Africa and the Indian Ocean world is often also based on religion, caste, class, etc. | **no** |
+| 11. | Social Categories | [_hasRaceorColor_](https://lod.enslaved.org/wiki/Property:P32) is used to model racial characteristics. This narrow focus is problematic as categorisation/description of enslaved in Africa and the Indian Ocean world is often also based on religion, caste, class, etc. | **no** |
+| 13. | Transports | [_Voyage_](https://lod.enslaved.org/wiki/Q146) is used to describe a long distance transport of enslaved persons. This entity is more focused/limited than [_sdo:TravelAction_](https://schema.org/TravelAction) and contains no associated properties. | **no** |
 | 15. | Type of enslavement | [_hasPersonStatus_](https://lod.enslaved.org/wiki/Property:P33) can be used to model the type of enslavement. However, the seven categories: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Freed Person_](https://lod.enslaved.org/wiki/Q386), [_Indentured Person or Pawn_](https://lod.enslaved.org/wiki/Q166), [_Enslaver or Owner_](https://lod.enslaved.org/wiki/Q112), [_Liberated African_](https://lod.enslaved.org/wiki/Q159275), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192) are too specific to be broadly used, and too broad to be used specifically. <br> _**We suggest to use the property and three concepts: [_Enslaved Person_](https://lod.enslaved.org/wiki/Q109), [_Free Person_](https://lod.enslaved.org/wiki/Q117), [_Liminal Status Person_](https://lod.enslaved.org/wiki/Q192)**_ | **yes** |
 
 
@@ -105,7 +106,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage, which can be modelled via rdfs:subClassOf | **no** |
+| 13. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage, which can be modelled via rdfs:subClassOf | **no** |
 
 
 ### 4.4. Person Name Vocabulary
@@ -123,15 +124,15 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_name_](https://schema.org/name) and [_location_](https://schema.org/location) to describe the organization. Furthermore, the relation between the organization and its staff can be described using the broad property [_affiliation_](https://schema.org/affiliation) or specified using properties [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), or [_member_](https://schema.org/member). [_Organization_](https://schema.org/Organization) contains no property to model the relation to the enslaved or the type of organization. <br> _**We suggest to use the properties IsEnslaverOf / IsEnslavedBy and entries in WikiData to address this**_  | **yes** |
-| 11. | Slave voyages | Voyages can be modelled using _[sdo:TransferAction](https://schema.org/TransferAction)_. The concept is awkwardly named, but contains the relevant properties like _[sdo:fromLocation](https://schema.org/fromLocation)_, _[sdo:toLocation](https://schema.org/toLocation)_, _[sdo:startTime](https://schema.org/startTime)_, and _[sdo:endTime](https://schema.org/endTime)_ to describe the voyage as well as _[sdo:instrument](https://schema.org/instrument)_ and _[sdo:agent](https://schema.org/agent)_ to describe the vessel and captain. However, the property to describe transported enslaved persons _[sdo:object](https://schema.org/object)_ is ill-fitted and should not be used . <br> _**We suggest to use SlaveVoyage as a secondary concept and to use the property ... to describe the transported**_| **yes** |
+| 13. | Slave voyages | Voyages can be modelled using _[sdo:TransferAction](https://schema.org/TransferAction)_. The concept is awkwardly named, but contains the relevant properties like _[sdo:fromLocation](https://schema.org/fromLocation)_, _[sdo:toLocation](https://schema.org/toLocation)_, _[sdo:startTime](https://schema.org/startTime)_, and _[sdo:endTime](https://schema.org/endTime)_ to describe the voyage as well as _[sdo:instrument](https://schema.org/instrument)_ and _[sdo:agent](https://schema.org/agent)_ to describe the vessel and captain. However, the property to describe transported enslaved persons _[sdo:object](https://schema.org/object)_ is ill-fitted and should not be used . <br> _**We suggest to use SlaveVoyage as a secondary concept and to use the property ... to describe the transported**_| **yes** |
 
 
-### 4.6. SlaveVoyages
+### 4.6. Transports
 [SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved with a data model similar to [SlaveVoyages](https://www.slavevoyages.org/) and [sdo:TravelAction](https://schema.org/TravelAction). This makes it unnecessary to reuse entities or properties from [SlaveVoyages](https://www.slavevoyages.org/).
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction and thus harder to reuse in other conctexts. | **no** |
+| 13. | Slave voyages | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction and thus harder to reuse in other conctexts. | **no** |
 
 
 ### 4.7. WikiData
@@ -140,7 +141,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 10. | Slaveholders | WikiData can be used to specify the type of organization, and give a definiton of that organization. For example a [_plantation_](https://www.wikidata.org/entity/Q188913) | **yes** |
-| 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
+| 12. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
 
 
 ### 4.8. Required specialised concepts
@@ -157,7 +158,7 @@ Two sets of reflexive are added to model enslavement and legal representation. F
 |  | Issue | Description	 | Property | 
 |--|-------|----------------|----------|
 | 9. | Relations | The properties isEnslavedBy and isEnslaverOf are used to describe the relations between enslavers and enslaved. Similarly, the properties isLegallyRepresentedBy and legallyRepresents are used to model legal representatives of enslaved (straatvoogden), owners (spouse in nomine uxoris), or specialized legal representatives. | **isEnslavedBy** <br> **isEnslaverOf** <br> **isLegallyRepresentedBy** <br> **legallyRepresents** |
-| 12. | Social categories | The categorization of enslaved people reaches far beyond their race and color and was also dependent on their religion, caste, and class. Therefore, we introduce the term hasSocialIdentity as a catch-all property for any social categorization | **hasSocialIdentity** |
+| 11. | Social categories | The categorization of enslaved people reaches far beyond their race and color and was also dependent on their religion, caste, and class. Therefore, we introduce the term hasSocialIdentity as a catch-all property for any social categorization | **hasSocialIdentity** |
 
 
 ### 4.10. Taxonomies and thesauri
@@ -165,7 +166,7 @@ Taxonomies and thesauri are not part of the extend PiCo model. However, data pro
 
 |  | Issue | Description	 | Entities | 
 |--|-------|----------------|----------|
-| 13. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertains the long-term availability and stability of collections. | - |
+| 12. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertains the long-term availability and stability of collections. | - |
 
 <br>
 
