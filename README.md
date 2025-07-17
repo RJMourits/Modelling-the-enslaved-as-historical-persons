@@ -25,8 +25,8 @@ Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvo
    - [5.6. Relation enslaved - legal representative](#56-relation-enslaved---legal-representative)
    - [5.7. Plantations (and other organisations)](#57-plantations-and-other-organisations)
    - [5.8. Transports](#58-transports)
-   - [5.9. Group observations](#59-group-observations)
-   - [5.10. Manumission](#510-manumission)
+   - [5.9. Manumission](#59-manumission)
+   - [5.10. Group observations](#510-group-observations)
 
 <br>
 
