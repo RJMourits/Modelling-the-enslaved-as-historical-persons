@@ -64,7 +64,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 10. | Slaveholders<sup>[1](#45-schemaorg),[2](#47-wikidata)</sup> | Slaveholders can also be organisations. For example, a plantation or company |
 | 11. | Social categories<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Most sources contain categorisations by race, class, or religion |
 | 12. | Taxonomies and Thesauri<sup>[1](#47-wikidata),[2](#410-taxonomies-and-thesauri)</sup> | Scholars have collected extensive lists of data related to slavery, such as an [overview of plantations in Suriname](https://hdl.handle.net/10622/4VOJYS) or an [overview of social groups in the archives of the Dutch East India Company](https://hdl.handle.net/10622/5LRS03) |
-| 13. | Transports<sup>[1](#42-enslavedorg), [2](#45-schemaorg),[3](#43-exploring-slave-trade-in-asia-esta),[4](#46-slavevoyages)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
+| 13. | Transports<sup>[1](#42-enslavedorg),[2](#45-schemaorg),[3](#43-exploring-slave-trade-in-asia-esta),[4](#46-slavevoyages)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
 | 14. | [Toponyms](#44-person-name-vocabulary) | Person names of enslaved can contain toponyms. The exact meaning of these toponyms is ambiguous, but the toponym are required to reconstruct persons |
 | 15. | [Type of enslavement](#42-enslavedorg) | There is no property to describe the type of enslavement |
 | 16. | [Unspecified groups](#48-required-specialised-classes) | Some sources contain only observations for groups of enslaved |
