@@ -187,6 +187,8 @@ We use a folio from the Surinamese slave registers to describe the extensions to
 However, other important characteristics and relationships between person observations cannot be modelled.
 
 ![Folio](Images/Slavenregister_InvNr_24_FolioNr_0267-klein.jpg)
+https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT00461.24/file/Slavenregister_InvNr_24_FolioNr_0267?viewer=true
+
 | Subject | Property | Object |
 |----|----|----|
 | example:person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
@@ -442,6 +444,7 @@ Enslaved and manumitted persons can receive a _straatvoogd_ who represents them 
 | | [sdo:givenName](https://schema.org/familyName) | "Loth" . | | |
 
 ![straatvoogd](Images/Slavenregister_InvNr_10_FolioNr_1920a-klein.jpg)
+https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT00461.10/file/Slavenregister_InvNr_10_FolioNr_1920a?viewer=true
 
 <br>
 
