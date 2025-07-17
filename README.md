@@ -104,7 +104,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 11. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage. The relationship between a MainVoyage and SubVoyage can be modelled via rdfs:subClassOf | **no** |
+| 11. | Slave voyages | ESTA has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TransferAction_](https://schema.org/TransferAction). ESTA adds a distinction between SubVoyages and the MainVoyage, which can be modelled via rdfs:subClassOf | **no** |
 
 
 ### 4.4. Person Name Vocabulary
