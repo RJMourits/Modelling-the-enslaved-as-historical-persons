@@ -62,11 +62,12 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 8. | [Reasons for observation](#42-enslavedorg) | Enslavement, emancipation, manumission, and trade are necessary to model the start and/or end of observations |
 | 9. | Relations<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | There are currently no properties to describe relationships between <br> - slaveholder and enslaved, <br> - freed persons and ["straatvoogden"](https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/suriname-vrijgelaten-slaven-manumissies-1832-1863), or <br> - slave owners and their legal representative. <br> The latter group includes women who are legally represented by their husband, also known as nomine uxoris |
 | 10. | Slaveholders<sup>[1](#45-schemaorg),[2](#47-wikidata)</sup> | Slaveholders can also be organisations. For example, a plantation or company |
-| 11. | Slave voyages<sup>[1](#45-schemaorg),[2](#43-exploring-slave-trade-in-asia-esta),[3](#46-slavevoyages),[4](#48-required-specialised-classes)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
+| 11. | Slave voyages<sup>[1](#45-schemaorg),[2](#43-exploring-slave-trade-in-asia-esta),[3](#46-slavevoyages)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
 | 12. | Social categories<sup>[1](#42-enslavedorg),[2](#49-required-specialised-properties)</sup> | Most sources contain categorisations by race, class, or religion |
 | 13. | Taxonomies and Thesauri<sup>[1](#47-wikidata),[2](#410-taxonomies-and-thesauri)</sup> | Scholars have collected extensive lists of data related to slavery, such as an [overview of plantations in Suriname](https://hdl.handle.net/10622/4VOJYS) or an [overview of social groups in the archives of the Dutch East India Company](https://hdl.handle.net/10622/5LRS03) |
 | 14. | [Toponyms](#44-person-name-vocabulary) | Person names of enslaved can contain toponyms. The exact meaning of these toponyms is ambiguous, but the toponym are required to reconstruct persons |
 | 15. | [Type of enslavement](#42-enslavedorg) | There is no property to describe the type of enslavement |
+| 16. | [Unspecified groups](#48-required-specialised-classes) | Some sources contain only observations for groups of enslaved |
 
 <br>
 
@@ -143,11 +144,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.8. Required specialised concepts
-The concept SlaveVoyage is introduced to specify [_sdo:TransferAction_](https://schema.org/TransferAction).
+The concept GroupObservation is introduced to model groups where it is impossible to model a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation).
 
 |  | Issue | Description	 | Concept | 
 |--|-------|----------------|---------|
-| 11. | Slave voyages | Although [_sdo:TransferAction_](https://schema.org/TransferAction) can be used to model slave voyage, but the term is too broad and insensitive. Therefore, we follow the example of SlaveVoyages and ESTA and use the concept SlaveVoyage to describe slave transports. | **SlaveVoyage** |
+| 16. | Unspecified groups | The concept GroupObservation is used to describe groups. A GroupObservation can NEVER replace a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation), but are meant to add extra content information or model demographic information that cannot be modelled using [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation). Related GroupObservations can be joint in a GroupReconstruction by the logic introduced in [(Roar)](https://www.leonvanwissen.nl/project/roar/) | **GroupObservation** <br> **GroupReconstruction** |
 
 
 ### 4.9. Required specialised properties
