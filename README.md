@@ -146,7 +146,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 | 12. | Taxonomies and Thesauri | Data providers can use the provided properties to describe their data using lists and thesauri. These lists and thesauri should only be used if they are part of a curated collection, as this ascertain the long-term availability and stability of collections. This makes WikiData unsuited for hosting thesauri | **no** |
 
 
-### 4.8. Required specialised concepts
+### 4.8. Required specialised classes
 The concept GroupObservation is introduced to model groups where it is impossible to model a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation).
 
 |  | Issue | Description	 | Concept | 
