@@ -380,7 +380,7 @@ We also describe the start and end date of person observations using [sdo:startD
 
   
 ### 5.5. Relation owner - legal representative
-Owners are sometimes represented by an intermediary or by their spouse, like in the example by the owner's spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy. 
+Owners are sometimes represented by an intermediary, like by the enslaver in the example by her spouse. This is modelled with the properties legallyRepresents and legallyRepresentedBy. 
 
 We advise to also add the beginning and end date of the observed enslaved relations with a blank node using sdo:startDate and sdo:endDate, as legal representation can change over time.
 
