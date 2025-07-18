@@ -133,7 +133,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 13. | Transports | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction and thus harder to reuse in other conctexts. | **no** |
+| 13. | Transports | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction) a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction) and thus harder to reuse in other conctexts. | **no** |
 
 
 ### 4.7. WikiData
