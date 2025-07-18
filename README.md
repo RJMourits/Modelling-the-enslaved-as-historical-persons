@@ -457,7 +457,7 @@ https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT0046
 
 ### 5.7. Plantations (and other organisations)
 
-![Almanak](Images/Surinaamsche Almanak voor het Jaar 1820.png)
+![almanak](Images/Surinaamsche_Almanak_voor_het_Jaar_1820.png)
 
 | Object | Property | Object |
 |----|----|----|
@@ -493,7 +493,7 @@ https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT0046
 | | [sdo:employee](https://schema.org/funder) | **example:Organization4** ; |
 | | [sdo:hasOccupation](https://schema.org/hasOccupation) | "Directeur" ; |
 | | [sdo:name](https://schema.org/name) | "J. Gossen" . |
-| example:Person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| example:Person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization4** ; |
 | | [sdo:employee](https://schema.org/funder) | **example:Organization4** ; |
 | | [sdo:hasOccupation](https://schema.org/hasOccupation) | "Administrateur" ; |
