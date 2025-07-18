@@ -273,7 +273,7 @@ We use the properties isEnslavedBy and isEnslaverOf to model the relationship be
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . |
 
-Moreover, we advise to also add the beginning and end date of the observed enslaved relations with a blank node using [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate), as slavery relations can change over time. 
+We advise to also add the beginning and end date of the observed enslaved relations in a blank node, as slavery relations can change over time. We do so with the properties [sdo:startDate](https://schema.org/startDate) and [sdo:endDate](https://schema.org/endDate).
 
 | Subject | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
@@ -281,6 +281,7 @@ Moreover, we advise to also add the beginning and end date of the observed ensla
 | | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | ] ; | | |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
 | | [sdo:name](https://schema.org/name) | "Ferdinand" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; | | |
