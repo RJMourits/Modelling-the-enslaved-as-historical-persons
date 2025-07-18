@@ -116,7 +116,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
 | 6. | Person names | Person names can contain African names, Christian names, and person descriptions. These can be modelled with [_nameSpecification_](https://www.lodewijkpetram.nl/vocab/pnv/doc/#nameSpecification) | **yes** |
-| 14. | Toponyms | For ontologies, we need an easy way to extract place information from names. We asked pnv for an extension of the model, which they promised to provide. | **yes** |
+| 14. | Toponyms | We asked pnv for an extension of the model, which they promised to provide. | **yes** |
 
 
 ### 4.5. Schema.org
