@@ -174,8 +174,6 @@ Taxonomies and thesauri are not part of the extend PiCo model. However, data pro
 ## 5. Exentensions of the PiCo model
 Based on the [Evaluation of the PiCo model](#evaluation-of-the-pico-model), we made the following extensions to the PiCo model. These extensions were discussed in Q2 2025 and presented at the DH Benelux in June.
 
-<br>
-
 
 ## 5.1. Vanilla PiCo model
 We use a folio from the Surinamese slave registers to describe the extensions to the base PiCo model in sections 5.1 to 5.4. The example underneath contains the owner and the first two listed enslaved persons. The base PiCo model can describe: 
