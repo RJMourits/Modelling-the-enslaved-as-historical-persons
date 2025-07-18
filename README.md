@@ -281,7 +281,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
-| | ] ; | | |
+| | | ] ; | |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
 | | [sdo:name](https://schema.org/name) | "Ferdinand" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "Ferdinand" ; | | |
@@ -292,6 +292,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; | | |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
@@ -306,9 +307,11 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person2** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
@@ -326,6 +329,7 @@ We also describe the start and end date of person observations using [sdo:startD
 | | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:startDate](https://schema.org/startDate) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | "1837-08-15"^^xsd:date ; |
 | | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q153](https://lod.enslaved.org/wiki/Q250) |
 | | | ] ; | | |
@@ -342,6 +346,7 @@ We also describe the start and end date of person observations using [sdo:startD
 | | XXX:isEnslavedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:startDate](https://schema.org/startDate) | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | "1837-08-15"^^xsd:date ; |
 | | | | [ed:P30](https://lod.enslaved.org/wiki/Property:P30) | [ed:Q153](https://lod.enslaved.org/wiki/Q250) |
 | | | ] ; | | |
@@ -362,9 +367,11 @@ We also describe the start and end date of person observations using [sdo:startD
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person2** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
 | | [sdo:familyName](https://schema.org/familyName) | "Coupijn" . | | |
@@ -383,13 +390,16 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person1** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | XXX:isEnslaverOf | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person2** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:spouse](https://schema.org/spouse)| **example:person5** ; | | |
 | | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person5** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Female](https://schema.org/Female) ; | | |
 | | [sdo:name](https://schema.org/name) | "M.M.A. Coupijn" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "M.M.A." ; | | |
@@ -399,6 +409,7 @@ We advise to also add the beginning and end date of the observed enslaved relati
 | | XXX:legallyRepresentedBy | [ | [rdf:value](http://www.w3.org/1999/02/22-rdf-syntax-ns#value) | **example:person4** ; |
 | | | | [sdo:startDate](https://schema.org/startDate) | " 1851"^^xsd:gYear ; |
 | | | | [sdo:endDate](https://schema.org/endDate) | "1853-03-30"^^xsd:date ; |
+| | | ] ; | |
 | | [sdo:gender](https://schema.org/gender) | [sdo:Male](https://schema.org/Male) ; | | |
 | | [picom:deceased](https://personsincontext.org/model#deceased) | "false"^^xsd:boolean . | | |
 
