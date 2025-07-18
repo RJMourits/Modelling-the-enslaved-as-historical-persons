@@ -457,7 +457,7 @@ https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT0046
 
 ### 5.7. Plantations (and other organisations)
 
-![almanak](Images/Surinaamsche_Almanak_voor_het_Jaar_1820.png)
+![almanak](Images/Surinaamsche-Almanak-voor-het-Jaar-1820.png)
 
 | Object | Property | Object |
 |----|----|----|
