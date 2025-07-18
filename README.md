@@ -150,7 +150,7 @@ The concept GroupObservation is introduced to model groups where it is impossibl
 
 |  | Issue | Description	 | Concept | 
 |--|-------|----------------|---------|
-| 16. | Unspecified groups | The concept GroupObservation is used to describe groups. A GroupObservation can NEVER replace a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation), but are meant to add extra content information or model demographic information that cannot be modelled using [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation). Related GroupObservations can be joint in a GroupReconstruction by the logic introduced in [(Roar)](https://www.leonvanwissen.nl/project/roar/) | **GroupObservation** <br> **GroupReconstruction** |
+| 3. | Enumerations | The concept GroupObservation is used to describe groups. A GroupObservation can NEVER replace a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation), but are meant to add extra content information or model demographic information that cannot be modelled using [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation). Related GroupObservations can be joint in a GroupReconstruction by the logic introduced in [(Roar)](https://www.leonvanwissen.nl/project/roar/) | **GroupObservation** <br> **GroupReconstruction** |
 
 
 ### 4.9. Required specialised properties
