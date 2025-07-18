@@ -11,7 +11,7 @@
    - [4.3. Exploring Slave Trade in Asia (ESTA)](#43-exploring-slave-trade-in-asia-esta)
    - [4.4. Person Name Vocabulary](#44-person-name-vocabulary)
    - [4.5. Schema.org](#45-schemaorg)
-   - [4.6. Transports](#46-transports)
+   - [4.6. SlaveVoyages](#46-slavevoyages)
    - [4.7. WikiData](#47-WikiData)
    - [4.8. Required specialised concepts](#48-required-specialised-concepts)
    - [4.9. Required specialised properties](#49-required-specialised-properties)
@@ -124,16 +124,16 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_name_](https://schema.org/name) and [_location_](https://schema.org/location) to describe the organization. Furthermore, the relation between the organization and its staff can be described using the broad property [_affiliation_](https://schema.org/affiliation) or specified using properties [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), or [_member_](https://schema.org/member). [_Organization_](https://schema.org/Organization) contains no property to model the relation to the enslaved or the type of organization. <br> _**We suggest to use the properties IsEnslaverOf / IsEnslavedBy and entries in WikiData to address this**_  | **yes** |
-| 13. | Slave voyages | Voyages can be modelled using _[sdo:TransferAction](https://schema.org/TransferAction)_. The concept is awkwardly named, but contains the relevant properties like _[sdo:fromLocation](https://schema.org/fromLocation)_, _[sdo:toLocation](https://schema.org/toLocation)_, _[sdo:startTime](https://schema.org/startTime)_, and _[sdo:endTime](https://schema.org/endTime)_ to describe the voyage as well as _[sdo:instrument](https://schema.org/instrument)_ and _[sdo:agent](https://schema.org/agent)_ to describe the vessel and captain. However, the property to describe transported enslaved persons _[sdo:object](https://schema.org/object)_ is ill-fitted and should not be used . <br> _**We suggest to use SlaveVoyage as a secondary concept and to use the property ... to describe the transported**_| **yes** |
+| 10. | Slaveholders | [_Organization_](https://schema.org/Organization) is a type in Schema.org with relevant properties like [_name_](https://schema.org/name) and [_location_](https://schema.org/location) to describe the organization. Furthermore, the relation between the organization and its staff can be described using the broad property [_affiliation_](https://schema.org/affiliation) or specified using properties [_owns_](https://schema.org/owns), [_employee_](https://schema.org/employee), [_founder_](https://schema.org/founder), [_funder_](https://schema.org/funder), or [_member_](https://schema.org/member). [_Organization_](https://schema.org/Organization) contains no property to model the relation to the enslaved or the type of organization. Nor is there a way to describe the type of organisation. <br> _**We suggest to use the properties IsEnslaverOf / IsEnslavedBy to model the relationship between enslaved persons and organisations, and the use of WikiData to specify the type of Organisation**_  | **yes** |
+| 13. | Transports | Voyages can be modelled using _[sdo:TravelAction](https://schema.org/TravelAction)_, which is meant to model travel by organized modes of transport. The concept contains the relevant properties like _[sdo:fromLocation](https://schema.org/fromLocation)_, _[sdo:toLocation](https://schema.org/toLocation)_, _[sdo:startTime](https://schema.org/startTime)_, and _[sdo:endTime](https://schema.org/endTime)_ to describe the voyage as well as _[sdo:agent](https://schema.org/agent)_ to describe the transported and _[sdo:instrument](https://schema.org/instrument)_ and _[sdo:provider](https://schema.org/provider)_ for the vessel and captain. _**We prefer _[sdo:TravelAction](https://schema.org/TravelAction)_ over _[sdo:TransferAction](https://schema.org/TransferAction)_ and _[sdo:MoveAction](https://schema.org/MoveAction)_, as _[sdo:TravelAction](https://schema.org/TravelAction)_ is used to model cargo and would refer to the enslaved as _[sdo:object](https://schema.org/object)s_, whereas _[sdo:MoveAction](https://schema.org/MoveAction)_ is meant to any type of movement**_ . | **yes** |
 
 
-### 4.6. Transports
+### 4.6. SlaveVoyages
 [SlaveVoyages](https://www.slavevoyages.org/) models transports of enslaved with a data model similar to [SlaveVoyages](https://www.slavevoyages.org/) and [sdo:TravelAction](https://schema.org/TravelAction). This makes it unnecessary to reuse entities or properties from [SlaveVoyages](https://www.slavevoyages.org/).
 
 |  | Issue | Description	  | Reuse |
 |--|-------|----------------|-------|
-| 13. | Slave voyages | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction and thus harder to reuse in other conctexts. | **no** |
+| 13. | Transports | SlaveVoyages has no own RDF data model and the required properties to model voyages are available in the Schema.org concept [_sdo:TravelAction_](https://schema.org/TravelAction). SlaveVoyages calls the [_sdo:TravelAction_](https://schema.org/TravelAction a SlaveVoyage, which is more specified than [_sdo:TravelAction_](https://schema.org/TravelAction and thus harder to reuse in other conctexts. | **no** |
 
 
 ### 4.7. WikiData
