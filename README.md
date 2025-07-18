@@ -13,7 +13,7 @@
    - [4.5. Schema.org](#45-schemaorg)
    - [4.6. SlaveVoyages](#46-slavevoyages)
    - [4.7. WikiData](#47-WikiData)
-   - [4.8. Required specialised concepts](#48-required-specialised-concepts)
+   - [4.8. Required specialised classes](#48-required-specialised-classes)
    - [4.9. Required specialised properties](#49-required-specialised-properties)
    - [4.10. Taxonomies and thesauri](#410-taxonomies-and-thesauri)
 5. [Exentensions of the PiCo model](#5-exentensions-of-the-PiCo-model)
