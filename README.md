@@ -56,7 +56,7 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 |--|-------|----------------|
 | 1. | [PiCo-M](#41-pico-m) | A basic descriptive model is necessary to describe observations and reconstructions of enslaved persons |
 | 2. | Age categories<sup>[1](#41-pico-m),[2](#42-enslavedorg)</sup> | It is not uncommon that person observations of enslaved persons only contain an age category (child vs adult) instead of an exact age  |
-| 3. | [Enumerations](#41-pico-m) | Certain sources contain (only) information about groups of enslaved persons as part of an enumeration |
+| 3. | Enumerations[1](#41-pico-m),[2](#48-required-specialised-classes) | Certain sources contain (only) information about groups of enslaved persons as part of an enumeration |
 | 4. | [Name changes](#41-pico-m) | Emancipation and manumission records refer to one event, but these records contain two observations for the same (enslaved and free) person with different characteristics |
 | 5. | [Observation or reconstruction](#41-pico-m) | The distinction between person observations and person reconstructions is not always clear with old data, as the preserved datasets are an undocumented mix of original and enriched data |
 | 6. | [Person names](#44-person-name-vocabulary) | Person names can contain African names, Christian names, and person descriptions |
@@ -69,7 +69,6 @@ During three meetings in Q1 2025, we identified the following issues in implemen
 | 13. | Transports<sup>[1](#42-enslavedorg),[2](#45-schemaorg),[3](#43-exploring-slave-trade-in-asia-esta),[4](#46-slavevoyages)</sup>  | Multiple parties collect information on slave voyages, but there is no authorative Linked Data model for slave voyages |
 | 14. | [Toponyms](#44-person-name-vocabulary) | Person names of enslaved can contain toponyms. The exact meaning of these toponyms is ambiguous, but they are often required to reconstruct enslaved persons |
 | 15. | [Type of enslavement](#42-enslavedorg) | There is no property to describe the type of enslavement |
-| 16. | [Unspecified groups](#48-required-specialised-classes) | Some sources contain only observations for groups of enslaved |
 
 <br>
 
