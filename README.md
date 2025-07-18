@@ -497,6 +497,8 @@ https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT0046
 
 ### 5.9. Manumission
 
+<br>
+
 
 ### 5.10. Group observations
 
