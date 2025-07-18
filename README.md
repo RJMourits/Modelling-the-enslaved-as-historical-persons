@@ -457,29 +457,49 @@ https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT0046
 
 ### 5.7. Plantations (and other organisations)
 
+![Almanak](Images/Surinaamsche Almanak voor het Jaar 1820.png)
+
 | Object | Property | Object |
 |----|----|----|
-| hdsc:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization) |
+| example:Organization1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization) |
 | | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
-| | [sdo:name](https://schema.org/name) | "Voorbeeld" ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person1 ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person2 ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Person3 ; |
-| | XXX:isEnslaverOf | hdsc:Person4 . |
-| hdsc:Person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 ; |
-| | [sdo:owns](https://schema.org/owns) | hdsc:Organization1 . |
-| hdsc:Person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 ; |
-| | [sdo:funder](https://schema.org/funder) | hdsc:Organization1 . |
-| hdsc:Person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [sdo:affiliation](https://schema.org/affiliation) | hdsc:Organization1 ; |
-| | [sdo:employee](https://schema.org/employee) | hdsc:Organization1 . |
-| hdsc:Person4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
-| | hdsc:isEnslavedBy | hdsc:Organization1 . |
+| | [sdo:name](https://schema.org/name) | "Frederikshoop" ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Person1** ; |
+| example:Organization2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization) |
+| | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
+| | [sdo:name](https://schema.org/name) | "Vierkinderen" ; |
+| | [sdo:parentOrganization](https://schema.org/parentOrganization) | **example:Organization3** . | 
+| example:Organization3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization) |
+| | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
+| | [sdo:name](https://schema.org/name) | "Abigaëlslust" ; |
+| | [sdo:subOrganization](https://schema.org/subOrganization) | **example:Organization3** . | 
+| example:Organization4 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [sdo:Organization](https://schema.org/Organization) |
+| | [sdo:additionalType](https://schema.org/additionalType) | [wdt:Q188913](https://wikidata.org/entity/Q188913) ; |
+| | [sdo:name](https://schema.org/name) | "Annaslust" ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Person2** ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Person3** ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Person4** . |
+| example:Person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization1** ; |
+| | [sdo:owns](https://schema.org/owns) | **example:Organization1** ; |
+| | [sdo:name](https://schema.org/name) | "F.F. Franke" . |
+| example:Person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization4** ; |
+| | [sdo:owns](https://schema.org/owns) | **example:Organization4** ; |
+| | [sdo:name](https://schema.org/name) | "Weduwe H.S. Goedman" . |
+| example:Person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization4** ; |
+| | [sdo:legalRepresentative](https://schema.org/funder) | **example:Organization4** ; |
+| | [sdo:employee](https://schema.org/funder) | **example:Organization4** ; |
+| | [sdo:hasOccupation](https://schema.org/hasOccupation) | "Directeur" ; |
+| | [sdo:name](https://schema.org/name) | "J. Gossen" . |
+| example:Person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
+| | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization4** ; |
+| | [sdo:employee](https://schema.org/funder) | **example:Organization4** ; |
+| | [sdo:hasOccupation](https://schema.org/hasOccupation) | "Administrateur" ; |
+| | [sdo:name](https://schema.org/name) | "J.H. Goedman" . |
 
-<br>!
+<br>
 
 
 ### 5.8. Transports
