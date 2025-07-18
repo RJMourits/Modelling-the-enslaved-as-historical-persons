@@ -146,11 +146,11 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 
 
 ### 4.8. Required specialised classes
-The concept GroupObservation is introduced to model groups where it is impossible to model a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation).
+The concept GroupObservation is introduced to model groups where it is impossible to model a [_picom:PersonObservation_](https://personsincontext.org/model/#PersonObservation).
 
 |  | Issue | Description	 | Concept | 
 |--|-------|----------------|---------|
-| 3. | Enumerations | The concept GroupObservation is used to describe groups. A GroupObservation can NEVER replace a [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation), but are meant to add extra content information or model demographic information that cannot be modelled using [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation). Related GroupObservations can be joint in a GroupReconstruction by the logic introduced in [(Roar)](https://www.leonvanwissen.nl/project/roar/) | **GroupObservation** <br> **GroupReconstruction** |
+| 3. | Enumerations | The concept GroupObservation is used to describe groups. A GroupObservation can NEVER replace a [_picom:PersonObservation_](https://personsincontext.org/model/#PersonObservation), but are meant to add extra content information or model demographic information that cannot be modelled using [_picom:PersonObservation_](https://personsincontext.org/model/#PersonObservation). Related GroupObservations can be joint in a GroupReconstruction by the logic introduced in [(Roar)](https://www.leonvanwissen.nl/project/roar/) | **GroupObservation** <br> **GroupReconstruction** |
 
 
 ### 4.9. Required specialised properties
