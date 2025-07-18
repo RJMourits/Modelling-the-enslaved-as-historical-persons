@@ -1,6 +1,6 @@
 # Modelling the enslaved as historical persons
 
-Rick Mourits, Thunnis van Oort, Kay Pepping, Pascal Konings, Britt van Duijvenvoorde, Liliana Melgar
+[Rick Mourits](https://github.com/RJMourits), [Thunnis van Oort](https://github.com/Thunnisvanoort), [Kay Pepping](https://github.com/KayWP), [Pascal Konings](https://github.com/pascalkonings), Britt van Duijvenvoorde, [Liliana Melgar](https://github.com/lilimelgar)
 
 1. [Introduction](#1-introduction)
 2. [Specification](#2-specification)
