@@ -419,6 +419,9 @@ We advise to also add the beginning and end date of the observed enslaved relati
 ### 5.6. Relation enslaved - legal representative
 Enslaved and manumitted persons can receive a _straatvoogd_ who represents them in the years after slavery. For example, the freed people in the example folio underneath. We model this relation for the first two persons in the example with the properties legallyRepresents and legallyRepresentedBy. We add the beginning date using sdo:startDate, as legal representation can change over time.
 
+![straatvoogd](Images/Slavenregister_InvNr_10_FolioNr_1920a-klein.jpg)
+https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT00461.10/file/Slavenregister_InvNr_10_FolioNr_1920a?viewer=true
+
 | Object | Property | Object | Property Blank Node | Object Blank Node |
 |----|----|----|----|----|
 | example:person6 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
@@ -447,9 +450,6 @@ Enslaved and manumitted persons can receive a _straatvoogd_ who represents them 
 | | [sdo:name](https://schema.org/name) | "D.J. Loth" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "D.J." ; | | |
 | | [sdo:givenName](https://schema.org/familyName) | "Loth" . | | |
-
-![straatvoogd](Images/Slavenregister_InvNr_10_FolioNr_1920a-klein.jpg)
-https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT00461.10/file/Slavenregister_InvNr_10_FolioNr_1920a?viewer=true
 
 <br>
 
