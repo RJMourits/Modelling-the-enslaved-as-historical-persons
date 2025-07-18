@@ -227,7 +227,6 @@ We use the Enslaved.org property for hasPersonStatus [ed:P33](https://lod.enslav
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
 | example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:child](https://schema.org/child) | **example:person2** ; |
@@ -261,7 +260,6 @@ We use the properties isEnslavedBy and isEnslaverOf to model the relationship be
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . |
 | example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:child](https://schema.org/child) | **example:person2** ; |
@@ -296,7 +294,6 @@ Moreover, we advise to also add the beginning and end date of the observed ensla
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; | | |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
 | example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [sdo:child](https://schema.org/child) | **example:person2** ; | | |
@@ -353,7 +350,6 @@ We also describe the start and end date of person observations using [sdo:startD
 | | [sdo:name](https://schema.org/name) | "Sans Souci" ; | | |
 | | [sdo:givenName](https://schema.org/givenName) | "Sans Souci" ; | | |
 | | [sdo:birthDate](https://schema.org/birthDate) | "1813"^^xsd:gYear ; |
-| | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) ; | | |
 | | [ed:P33](https://lod.enslaved.org/wiki/Property:P33) | [ed:Q109](https://lod.enslaved.org/wiki/Q109) . | | |
 | example:person3 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; | | |
 | | [sdo:child](https://schema.org/child) | **example:person2** ; | | |
