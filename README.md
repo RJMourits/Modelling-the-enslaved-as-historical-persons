@@ -482,6 +482,7 @@ https://www.nationaalarchief.nl/onderzoeken/archief/NadereToegangen/invnr/NT0046
 | example:Person1 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization1** ; |
 | | [sdo:owns](https://schema.org/owns) | **example:Organization1** ; |
+| | [sdo:hasOccupation](https://schema.org/hasOccupation) | "Directeur" ; |
 | | [sdo:name](https://schema.org/name) | "F.F. Franke" . |
 | example:Person2 | [a](https://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [picom:PersonObservation](https://personsincontext.org/model/#PersonObservation) ; |
 | | [sdo:affiliation](https://schema.org/affiliation) | **example:Organization4** ; |
