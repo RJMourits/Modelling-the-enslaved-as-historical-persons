@@ -84,7 +84,7 @@ The logic of the [Persons in Context model](https://personsincontext.org) is eas
 | 1. | PiCo-M | The logic of the Persons in Context model is easily applicable to data on enslaved persons | **yes** |
 | 2. | Age categories | hasAge models exact ages <br> _**We suggest not to use hasAge to refer to age categories**_ | **no** |
 | 3. | Enumerations | Each individual in an enumeration can be modelled as a person observation, provided that such enumerations contain descriptive information. For example, 5 underage, male enslaved belonging to J. Janssen | **yes** |
-| 4. | Name changes | An emancipation or manumission record should be seen as two observations: one of an enslaved person until emancipation/manumission, and a second of a free person from emancipation/manumission. These two observations are joint via owl:sameAs. | **yes** |
+| 4. | Name changes | An emancipation or manumission record should be seen as two observations: one of an enslaved person until emancipation/manumission, and a second of a free person from emancipation/manumission. These two observations are joint via sdo:sameAs. | **yes** |
 | 5. | Observation or reconstruction | Person observations are meant to model a record and stay close to the source. Person reconstructions combines information and allow for interpretation. <br> _**In case the relation to the source is lost, and records probably contain far-reaching interpretation by the data provider, we suggest to model the database as a reconstruction**_ | **yes** |
 
 
